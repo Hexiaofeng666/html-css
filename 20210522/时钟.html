@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 600px;
+            height: 600px;
+            background-color: green;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+        }
+        section{
+            width: 85%;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-75px);
+            left: 7.5%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <p id="date"></p>
+            <p id="time"></p>
+        </section>
+    </div>
+    <script>
+        // 先获取页面的标签
+        var date = document.getElementById('date')
+        console.log(date);
+        var time = document.getElementById('time')
+
+        // 获取时间
+        var now = new Date()
+        var year = now.getFullYear()
+        console.log(year);
+        var month = now.getMonth()+1
+        console.log(month);
+        var day = now.getDate()
+        console.log(day);
+        var week = now.getDay()
+        console.log(week);
+        var str = year+'年'+month+'月'+day+'日'
+        console.log(str);
+        // 往标签里面插入内容
+        date.innerText=str
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            color: white;
+            background-color: gray;
+        }
+        /* @media 设置媒体查询 */
+        /* @media (min-width: 800px){
+            body{
+                background-color: red;
+            }
+            div::after{
+                content: '---页面尺寸已经大于700了';
+            }
+        } */
+        /* 监听页面小于600的时候将背景颜色改为蓝色 */
+        /* @media (max-width: 600px){
+            body{
+                background-color: blue;
+            }
+        } */
+        /* and两边条件都要成立 */
+        /* @media(max-width:800px)and(min-width:600px){
+            body{
+                background-color: pink;
+            }
+            div::after{
+                content: '---页面尺寸已经小于800且大于600了';
+            }
+        } */
+        /* 
+            (max-width:800px),(min-width:600px)
+            这里相当于是或的意思，两边只需要一个条件成立即可
+         */
+         /* @media(max-width:600px),(min-width:900px){
+            body{
+                background-color: pink;
+            }
+            div::after{
+                content: '---页面尺寸已经大于900或者小于600了';
+            }
+        } */
+
+        /* 监听屏幕为横屏 */
+        /* @media (orientation :landscape){
+            body{
+                background-color: red;
+            }
+        } */
+        /* 监听屏幕为竖屏 */
+        /* @media (orientation :portrait){
+            body{
+                background-color: blue;
+            }
+        } */
+    </style>
+    <!-- 根据不同的屏幕尺寸来导入不同的css文件进行页面适配 -->
+    <link rel="stylesheet" media='(max-width:600px)' href="./css1.css">
+    <link rel="stylesheet" media='(min-width:900px)' href="./css2.css">
+</head>
+<body>
+    <div>
+        你并不是一无所有，你还有脸回家
+    </div>
+</body>
+</html>

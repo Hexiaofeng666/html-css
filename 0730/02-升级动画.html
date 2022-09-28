@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+            /* 
+                name                动画名称
+                duration            动画执行一次所需要的时间
+                timing-function     设置动画的速率,线性
+                delay               设置动画延迟时间
+                iteration-count     设置动画的次数
+                direction           设置动画往返
+                fill-mode           设置动画结束后停留位置
+            */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            position: absolute;
+            /* 可以将所有动画属性写在一个地方，中间使用空格隔开 */
+            animation: move 2s linear 3.5;
+            /* 设置动画延迟时间 */
+            /* animation-delay: 5s; */
+
+            /* 设置动画往返 */
+            animation-direction: alternate;
+
+            /* 设置动画停留位置，停留在结束位置 */
+            animation-fill-mode: both;
+
+        }
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: calc(100% - 200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

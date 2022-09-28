@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+          alert("这是一段信息！");
+        }
+        </script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            /* 颜色的值： 1.颜色的英文单词  
+            2.十六进制颜色
+            3.rgb(红0-255,绿0-255,蓝0-255)
+            4.hsl(0~360,饱和度%,亮度%) 
+            5.rgba()其中a是设置透明度 取整范围：0~1  越接近0，越透明  反之，越不透明*/
+            background-color: red;
+
+
+            /* 这是元素整体的透明，包括元素本身和其里面包裹的内容都设置透明度 */
+            /* opacity: 0.5; */
+
+            
+            /* 渐变色 */
+            /* 线性渐变 */
+            /* linear-gradient (方向，颜色1，颜色2，颜色3，......) 可以添加百分比*/
+            /* 方向默认从上到下，可以不设置 */
+            /* to right 从左到右   to left从右往左 to bottom right 往右下角 */
+            /* background-image: linear-gradient(to right ,red 60%,orange,yellow); */
+
+
+            /* 环形渐变 */
+            background-image: radial-gradient(circle,red,green,yellow);
+
+        }
+    </style>
+</head>
+<body>
+    <div>这是div的内容</div>
+    <button onclick=myFunction()>弹出框</button>
+    
+</body>
+</html>

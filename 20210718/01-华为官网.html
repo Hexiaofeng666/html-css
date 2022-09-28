@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华为官网</title>
+    <style>
+        body {
+            width: 100%;
+            background-color: gainsboro;
+        }
+        /*  * 星号是选中页面中所有标签，通配选择器 */
+        * {
+            margin: 0;
+            padding: 0;
+            /* 去掉列表前面的序号 */
+            list-style: none;
+            box-sizing: border-box;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+        }
+        header > div:first-of-type {
+            height: 25px;
+            background-color: black;
+        }
+        header > div:first-of-type span {
+            float: right;
+            color: white;
+            margin-right: 50px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+        header > div:first-of-type span::before {
+            content: url(./1.png);
+            position: relative;
+            left: -3px;
+        }
+        header > div:first-of-type span::after {
+            content: url(./1.png);
+            position: relative;
+            left: 3px;
+        }
+
+        header > div:last-of-type {
+            height: 75px;
+            background-color: white;
+        }
+
+        header > div:last-of-type img {
+            height: 35px;
+            margin: 20px 50px;
+        }
+        header > div:last-of-type ul {
+            display: inline-block;
+            margin-left: 50px;
+        }
+        header > div:last-of-type ul li {
+            float: left;
+            margin-left: 30px;
+            line-height: 75px;
+        }
+        header > div:last-of-type span {
+            float: right;
+            line-height: 75px;
+            margin-right: 50px;
+        }
+        .banner-img {
+            width: 100%;
+        }
+        h1 {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        hr {
+            border-color: red;
+            width: 50px;
+            margin: 0 auto 30px;
+        }
+        .box {
+            width: 100%;
+            height: 350px;
+            padding: 0 70px;
+        }
+        .box > div {
+            height: 100%;
+            position: relative;
+            display: inline-block;
+        }
+        .box img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .cell1 > div:first-of-type, .cell2 > div:last-of-type{
+            width: 65%;
+        }
+        .cell1 > div:last-of-type, .cell2 > div:first-of-type {
+            
+            width: 30%;
+        }
+        .cell1 > div:last-of-type, .cell2 > div:last-of-type {
+            float: right;
+        }
+    
+        .box p {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+        }
+        .box p strong {
+            display: block;
+            font-size: 26px;
+        }
+        .cell2 {
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- 黑色的小块 -->
+        <div>
+            <span>登录</span>
+            <span>语言</span>
+            <span>集团网站</span>
+        </div>
+        <!-- 白色的大块 -->
+        <div>
+            <img src="http://www-file.huawei.com/-/media/corporate/images/home/logo/huawei_logo.png" alt="">
+            <ul>
+                <li>个人</li>
+                <li>商用</li>
+                <li>服务</li>
+                <li>合作</li>
+                <li>关于</li>
+            </ul>
+            <span>图片</span>
+            <span>在线购买</span>
+        </div>
+    </header>
+    <img class="banner-img" src="http://www-file.huawei.com/-/media/corp2020/home/banner/4/has2021-cn2.jpg" alt="">
+
+    <h1>推荐信息</h1>
+    <!-- 线 -->
+    <hr>
+
+    <section class="box cell1">
+        <div>
+            <img src="http://www-file.huawei.com/-/media/corp2020/home/cbg/03/mate_x2_pc.jpg" alt="">
+            <p>
+                <span>产品</span>
+                <strong>HUAWEI Mate X2 </strong>
+                <span>新一代折叠旗舰，大展想象</span>
+            </p>
+        </div>
+        <div>
+            <img src="http://www-file.huawei.com/-/media/corp2020/home/cbg/03/freebuds_4i_pc.jpg" alt="">
+            <p>
+                <span>产品</span>
+                <strong>HUAWEI Mate X2 </strong>
+                <span>新一代折叠旗舰，大展想象</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="box cell2">
+        <div>
+            <img src="http://www-file.huawei.com/-/media/corp2020/home/cbg/0220/matebook-x-pro-p.jpg" alt="">
+            <p>
+                <span>产品</span>
+                <strong>HUAWEI Mate X2 </strong>
+                <span>新一代折叠旗舰，大展想象</span>
+            </p>
+        </div>
+        <div>
+            <img src="http://www-file.huawei.com/-/media/corp2020/home/cbg/0105/mate40-pro-p.jpg" alt="">
+            <p>
+                <span>产品</span>
+                <strong>HUAWEI Mate X2 </strong>
+                <span>新一代折叠旗舰，大展想象</span>
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

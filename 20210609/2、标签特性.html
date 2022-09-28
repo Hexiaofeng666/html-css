@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            background-color: red;
+            width: 500px;
+            height: 500px;
+        }
+        div{
+            background-color: green;
+            width: 500px;
+            height: 500px;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 行标签
+        1.多个行标签会排成一行，直到空间不够用才会换行
+        2.display:inline 展现方式为行内
+        3.行标签无法设置宽高，元素的大小由内容决定
+     -->
+    <span>内容1</span>
+    <span>内容2</span>
+    <!-- 大部分的文本标签都是行标签，除了p，标题标签h1~h6都是块标签 -->
+
+    <!-- 块标签特点：
+        1.独占一行，宽度默认是占父类的100%，会造成换行
+        2.display:block
+        3.可以设置宽高大小
+     -->
+    <div>块标签</div>
+    <!-- 结构标签都是块标签 -->
+
+    <!-- 行内块：display:inline-block -->
+    <!-- 1.可以给元素设置宽高 -->
+    <!-- 2.多个元素排成一行 -->
+    <!-- 3.元素的大小由内容决定 -->
+    <img src="./favicon.ico" alt="">
+    <img src="./favicon.ico" alt="">
+</body>
+</html>

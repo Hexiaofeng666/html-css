@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     .nav{
+       text-align: center;
+       background-color: pink;
+       line-height: 50px;
+       /* 定位 */
+       /* 定位设置后，元素脱离文档流 */
+       /* 还可以通过： top  left  bottom  right 移动元素  */
+       /* 移动参照物： 当前页面窗口大小 */
+       position: fixed;
+       height: 100%;
+       left: 0;
+       bottom: 0;
+     }
+     .content{
+       background-color: lightblue;
+       font-size: 50px;
+       text-align: center;
+       height: 800px;
+     }
+  </style>
+</head>
+<body>
+    <!-- 固定：对于标签固定在指定的位置，并且不会随着滚动而改变 -->
+    <div class="nav">这是导航栏</div>
+    <div class="content">这是内容</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            margin: 50px auto;
+            /* 无论是img方式还是背景图插入的方式，只要不调整图片的大小
+            那么默认是以自己的大小为主，不会随容器的变化而变化 */
+            background-image: url(./img1.jiff);
+
+            /* background-size: w h; */
+            /* background-size: 100% 100%; */
+
+            /* 当只设置一个值的时候，图片的高度会按照图片的比例自动变化 */
+            /* background-size: 100%; */
+
+            /* 会填充满容器。按照图片比例中较短的一边为主，进行图片比例放大，
+            覆盖整个容器，不会造成图片拉伸变形，但是会造成图片缺失 */
+            /* background-size: cover; */
+
+            /* 按照图片最大限度的比例进行显示，保证了图片的比例，
+            不会造成图片拉伸变形，但是不能一定能填充满容器 */
+            /* background-size: contain; */
+
+            /* 宽自适应 */
+            background-size: auto 100%;
+            /* 去重,当容器大于背景图大小时，背景图片为了填充容器，会出现重复的图片 */
+            background-repeat: no-repeat;
+
+            /* 移动背景图片 */
+            /* background-position: x y; */
+            /* x：正数往右移动，负数往左移动 */
+            /* y：正数往下移动，负数往上移动 */
+            /* background-position-x: -100px; */
+
+            padding: 40px;
+            /* 相对于哪个位置为移动参照物 */
+            /* background-origin: padding-box; */
+
+            
+
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            background-image: url(./img1.jiff);
+            background-size: contain;
+            margin: 0;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            /* 固定背景图片 */
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>   </div> -->
+  
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>内容</p>
+    <p></p>
+    <script>
+        var str='这是一个字符串：'
+        // 根据索引值获取内容
+        // 对字符串进行部分内容的获取
+        console.log(str.charAt(5));
+
+        // 截取从1开始数3个字符长度
+        console.log(str.substr(1,3));
+        // 截取从1到3，不会将结束位置索引值的内容包裹进去（不包括3），所以此时为：是一
+        // 对于截取出部分内容的时候，当只写一个值的时候，那么就从开始位置到字符串的结束位置都截下去
+        console.log(str.substring(1,3));
+
+        // 根据内容获取索引值
+        console.log(str.indexOf('串'));
+
+        var text = '今天下了好大的雨'
+        // 拼接
+        var newstr = str + text
+        console.log(newstr);
+
+        // 修改 replace
+        // console.log(newstr.replace('下了好大的雨','会是一个好天气'));
+        // 通过字符串的方法获取要被替换的内容
+        console.log(newstr.replace(newstr.substring(2),'会是一个好天气'));
+
+        // var str='报道1：今日重大消息的内容,现场记者报道称：xxx,有重大消息在新闻中进行报道;报道2：重大消息第四届海丝博览会暨第二十三届海交会投资促进大会举行;报道3:霓虹汇聚，今晚800架无人机震撼榕城夜空。重大消息“有福之州盛世璀璨”闽江山水之城视听灯光秀，呈现全画幅榕城山水长卷，迎接即将启幕的重大消息第四届21世纪海上丝绸之路博览会暨重大消息第二十三届海峡两岸经贸交易会。'
+        // 要快速对字符串数据进行截取显示
+        // 拆分 
+        // var arr = str.split(';')
+        // console.log(arr[1]);
+
+        console.clear()
+        // Math 所有有关数学相关的操作
+        // 随机数  0<=n<1 
+        var r = Math.random()*100
+        console.log(r);
+
+        // 取整
+        // 四舍五入
+        console.log(Math.round(r));
+        // 向下取整
+        console.log(Math.floor(r));
+        // 向上取整(只要小数有内容，就往整数部位进一位)
+        console.log(Math.ceil(r));
+    </script>
+</body>
+</html>

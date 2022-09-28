@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/base.css">
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" media='(min-width:720px)' href="./css/indexmin720px.css">
+  <link rel="stylesheet" media='(max-width:720px)' href="./css/indexmax720px.css">
+  <!-- <link rel="stylesheet" href="./css/index.css"> -->
+  <!-- <link rel="stylesheet" href="./css/carousel.css"> -->
+  <!-- <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css"> -->
+  <script src="./bootstrap-3.3.7-dist/js/jquery-3.1.1.js"></script>
+  <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+</head>
+
+<body>
+  <!-- 顶部 -->
+  <nav class="toparea">
+
+    <!-- 小米商标 -->
+    <div>
+      <div class="navbar-header">
+        <img src="./imgs/小米.png">
+      </div>
+      <!-- 搜索框 -->
+      <div class="navbar-header">
+        <div class="search">
+          <img src="./imgs/搜索.png" style="background-color: white; color: gray; opacity: 0.6;"></img>
+          <input type="text" placeholder="搜索商品名称">
+        </div>
+
+      </div>
+      <!-- 右侧图标 -->
+      <div class="navbar-header pull-right">
+        <img class="glyphicon" src="./imgs/我的.png" alt="">
+        <!-- <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            
+          </div> -->
+      </div>
+    </div>
+
+
+    <!-- 推荐导航栏 -->
+    <div>
+      <nav class="navbar navbar-default mynavbar">
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">推荐</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">智能</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">家电</a></li>
+            <li><a href="#">笔记本</a></li>
+          </ul>
+        </div>
+
+
+        <!-- 下拉箭头 -->
+        <div class="pull-right jiantou">
+          <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="./imgs/下  拉.png" alt="">
+          </button>
+          <ul class="dropdown-menu nav" role="menu" aria-labelledby="dropdownMenu1">
+            <li>全部</li>
+            <img src="./imgs/上  拉.png" alt="">
+            <br>
+            <li class="active"><a href="#">推荐</a></li>
+            <li><a href="#">手机</a></li>
+            <li><a href="#">智能</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">家电</a></li>
+            <li><a href="#">笔记本</a></li>
+          </ul>
+        </div>
+
+
+      </nav>
+    </div>
+
+  </nav>
+  <!-- 轮播 -->
+  <div class="textarea">
+    <div class="slide" style="margin-top: 80px;">
+
+      <input type="radio" name="sildeInput" value="0" id="sildeInput1" checked hidden />
+      <label for="sildeInput1"></label>
+
+      <input type="radio" name="sildeInput" value="1" id="sildeInput2" hidden />
+      <label for="sildeInput2"></label>
+
+      <input type="radio" name="sildeInput" value="1" id="sildeInput3" hidden />
+      <label for="sildeInput3"></label>
+
+
+      <ul>
+        <li><img src="./imgs/img2.jpg" alt=""></li>
+        <li><img src="./imgs/img3.jpg" alt=""></li>
+        <li><img src="./imgs/img1.jpg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 米金商城 -->
+  <div class="mijin">
+    <div>
+      <img src="./imgs/img4.png" alt="">
+      <img src="./imgs/img5.png" alt="">
+      <img src="./imgs/img6.png" alt="">
+      <img src="./imgs/img7.png" alt="">
+      <img src="./imgs/img8.png" alt="">
+    </div>
+    <div>
+      <img src="./imgs/img9.png" alt="">
+      <img src="./imgs/img10.png" alt="">
+      <img src="./imgs/img11.png" alt="">
+      <img src="./imgs/img12.png" alt="">
+      <img src="./imgs/img13.png" alt="">
+    </div>
+  </div>
+  <!-- xiaomi11 Ultra -->
+  <div class="ultra">
+    <div class="mishadow"></div>
+    <div>
+      <div>
+        <img src="./imgs/img14.webp" alt="">
+        <div>
+          <img src="./imgs/img15.webp" alt="">
+          <img src="./imgs/img16.webp" alt="">
+        </div>
+      </div>
+      <img src="./imgs/img17.webp" alt="">
+    </div>
+  </div>
+  <!-- 商品 小米手机-->
+  <div class="business">
+    <!-- 第一行 -->
+    <div>
+      <div>
+        <img src="./imgs/img18.jpg" alt="">
+        <h1>小米11 Pro</h1>
+        <h3>1/1.12"GN2 | 骁龙888</h3>
+        <h2>￥4499起 <span>￥</span><s>4999</s> </h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+      <div>
+        <img src="./imgs/img19.jpg" alt="">
+        <h1>MIX FOLD 小米折叠...</h1>
+        <h3>折叠大屏 | 自研芯片</h3>
+        <h2>￥9999起</h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <img src="./imgs/img20.jpg" alt="">
+        <h1>Note 9 5G</h1>
+        <h3>天玑 800U处理器</h3>
+        <h2>￥1199起 <span>￥</span><s>1299</s> </h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+      <div>
+        <img src="./imgs/img21.jpg" alt="">
+        <h1>小米10S</h1>
+        <h3>骁龙870 | 对称式双扬立体声</h3>
+        <h2>￥2999起 <span>￥</span><s>3299</s> </h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <img src="./imgs/img22.jpg" alt="">
+        <h1>Note 9 Pro 5G</h1>
+        <h3>一亿像素夜景相机</h3>
+        <h2>￥1399起 <span>￥</span><s>1599</s> </h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+      <div>
+        <img src="./imgs/img23.jpg" alt="">
+        <h1>小米11</h1>
+        <h3>骁龙888 | 2K四曲面屏</h3>
+        <h2>￥3799起 <span>￥</span><s>3999</s> </h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <img src="./imgs/img24.jpg" alt="">
+        <h1>黑鲨4</h1>
+        <h3>磁动力升降肩键</h3>
+        <h2>￥2499起</h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+      <div>
+        <img src="./imgs/img25.jpg" alt="">
+        <h1>Redmi K40 Pro 系列</h1>
+        <h3>骁龙888 | E4 旗舰直屏</h3>
+        <h2>￥2499起 <span>￥</span><s>2799</s> </h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+    </div>
+    <!-- 下划线部分 -->
+    <div class="decoration">
+      <div>更多小米手机产品 ></div>
+    </div>
+    <div class="mishadow"></div>
+  </div>
+  <!-- 小米电视 -->
+  <div class="bigimg">
+    <img src="./imgs/img26.webp" alt="">
+    <div class="decoration">
+      <div>更多小米电视产品 ></div>
+    </div>
+    <div class="mishadow"></div>
+  </div>
+  <!-- 小米笔记本 -->
+  <div class="bigimg">
+    <img src="./imgs/img27.webp" alt="">
+  </div>
+  <div class="business">
+    <!-- 第一行 -->
+    <div>
+      <div>
+        <img src="./imgs/img28.jpg" alt="">
+        <h1>RedmiBook Pro 14</h1>
+        <h3>2.5K超视网膜全面屏</h3>
+        <h2>￥4699起</h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+      <div>
+        <img src="./imgs/img29.jpg" alt="">
+        <h1>RedmiBook Pro 15</h1>
+        <h3>3.2K超视网膜全面屏</h3>
+        <h2>￥4999起</h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <img src="./imgs/img30.jpg" alt="">
+        <h1>小米笔记本Pro 15</h1>
+        <h3>大师屏 轻薄大作 | 芯怀猛...</h3>
+        <h2>￥6499起</h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+      <div>
+        <img src="./imgs/img31.jpg" alt="">
+        <h1>小米笔记本Pro 14</h1>
+        <h3>大师屏 轻薄大作 | 芯怀猛...</h3>
+        <h2>￥5299起</h2>
+        <div class="buybutton">立即购买</div>
+      </div>
+    </div>
+
+
+
+    <!-- 下划线部分 -->
+    <div class="decoration">
+      <div>更多小米笔记本产品 ></div>
+    </div>
+    <div class="mishadow"></div>
+  </div>
+  <!-- 米家智能热水器 -->
+  <div class="bigimg">
+    <img src="./imgs/img32.webp" alt="">
+    <div class="decoration">
+      <div>更多米家家电产品 ></div>
+    </div>
+    <div class="mishadow"></div>
+  </div>
+  <!-- 智能好物 -->
+  <div class="bigimg">
+    <img src="./imgs/img33.webp" alt="">
+    <div class="mishadow"></div>
+    <div class="decoration">
+      <div>更多米家智能产品 ></div>
+    </div>
+    <!-- <div class="mishadow"></div> -->
+  </div>
+  <!-- 6种分类 -->
+  <div class="fenlei">
+    <!-- 第一行 -->
+    <div class="mishadow"></div>
+    <div>
+      <img src="./imgs/img34.webp" alt="">
+      <img src="./imgs/img35.webp" alt="">
+    </div>
+    <div>
+      <img src="./imgs/img36.webp" alt="">
+      <img src="./imgs/img37.webp" alt="">
+    </div>
+    <div>
+      <img src="./imgs/img38.webp" alt="">
+      <img src="./imgs/img39.webp" alt="">
+    </div>
+
+  </div>
+  <!-- 以旧换新 -->
+  <div class="bigimg liaojiexiaomi">
+    <img src="./imgs/img40.webp" alt="">
+    <div class="mishadow"></div>
+    <div class="decoration" style="display: flex;">
+      <div>了解小米</div>
+      <span>></span>
+    </div>
+    <div class="mishadow"></div>
+  </div>
+  <!-- 底部 -->
+  <div class="bottom">
+    <a href="./index.html">
+      <div>
+        <img src="./imgs/首页-选中.png" alt="">
+        <p>首页</p>
+      </div>
+    </a>
+    <a href="./category.html">
+      <div>
+        <img src="./imgs/分类.png" alt="">
+        <p>分类</p>
+      </div>
+    </a>
+    <a href="./discover.html">
+      <div>
+        <img src="./imgs/互联网.png" alt="">
+        <p>米圈</p>
+      </div>
+    </a>
+    <a href="./cart.html">
+      <div>
+        <img src="./imgs/购物车.png" alt="">
+        <p>购物车</p>
+      </div>
+    </a>
+    <a href="./user.html">
+      <div>
+        <img src="./imgs/我的.png" alt="">
+        <p>我的</p>
+      </div>
+    </a>
+
+
+
+
+  </div>
+  <!-- 回顶部及 0元用 -->
+  <div class="backtop">
+    <img src="./imgs/img41.png" alt="">
+    <a href="#">
+      <img src="./imgs/返回顶部.png" alt="">
+    </a>
+
+  </div>
+</body>
+
+</html>

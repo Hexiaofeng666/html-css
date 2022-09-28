@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            background-color: green;
+            color: white;
+            margin-left: 20px;
+            padding: 0 10px;
+        }
+        span:nth-child(2){
+            /* margin-left: 40px; */
+            /* 会造成分层，脱离文档流 */
+            /* 参照物：参照元素本身原来的位置，
+            所以定位设置后，元素原本的空间不会被释放 */
+            position: relative;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <span>01</span>
+    <span>02</span>
+    <span>03</span>
+    <span>04</span>
+</body>
+</html>

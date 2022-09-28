@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul{
+      list-style:none;
+      padding: 0;
+      width: 80%;
+      margin: auto;
+    }
+    li{
+      width:23%;
+      display: inline-block;
+      position: relative;
+    }
+    li:nth-child(n+2){
+      margin-left: 20px;
+    }
+    img{
+      width: 100%;
+      transition: all .5s;
+    }
+    
+    li:hover{
+      color: tomato;
+    }
+    li:hover img{
+      border-radius: 50%; 
+    }
+    div{
+      position: absolute;
+      top: 0;
+      width:130px;
+      height: 130px;
+      border-radius: 50%;
+      /* a 设置透明度：范围0~1之间，越接近1，越不透明 ，越接近0，越透明 */
+      background-color: rgba(255,69,0,0.8);
+      left: calc((100% - 130px)/2);
+      top:calc((100% - 180px)/2);
+      text-align: center;
+      color: white;
+      /* 行高: 调整文本内容在竖直方向的位置*/
+      line-height: 130px;
+      
+      /* scale 比例收缩/放大 */
+      transform: scale(0,0);
+      /* 做效果 */
+      transition: all .5s;
+    }
+    li:hover div{
+      transform: scale(1,1);
+    }
+    
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <img src="imgs/1.jpg" alt="">
+      <div>详情 ></div>
+      <p>你无忧拥抱世界，我用心爱护你</p>
+    </li>
+    <li>
+      <img src="imgs/2.jpg" alt="">
+      <div>详情 ></div>
+      <p>你无忧拥抱世界，我用心爱护你</p>
+    </li>
+    <li>
+      <img src="imgs/3.jpg" alt="">
+      <div>详情 ></div>
+      <p>你无忧拥抱世界，我用心爱护你</p>
+    </li>
+    <li>
+      <img src="imgs/4.jpg" alt="">
+      <div>详情 ></div>
+      <p>你无忧拥抱世界，我用心爱护你</p>
+    </li>
+  </ul>
+</body>
+</html>

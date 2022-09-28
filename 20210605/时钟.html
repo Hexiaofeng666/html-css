@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p id="date"></p>
+        <p id="time"></p>
+    </div>
+    <script>
+        var date = document.getElementById('date')
+        var time = document.getElementById('time')
+
+        // setInterval(() => {
+
+        // },1000);
+        // 定时器  时间单位是：ms
+        // setInterval(function(){
+        //     showTime();
+        // },1000);
+
+        // 加括号手动调用，所以这里不用
+            setInterval(showTime,1000)
+        // 针对重复性的代码，为了提高代码的复用率，使用函数分装(只要不调用函数，函数就不会被调用)
+        function showTime(){
+            // Date对象
+            var now = new Date()
+            
+            // 或者
+            // var weekStr='日一二三四五六'
+            // +weekStr.charAt(now.getDay)
+            // 利用索引
+            var weekArr = ['天','一','二','三','四','五','六']
+            date.innerText=now.getFullYear()+'年'+（now.getMonth()+1)+'月'+now.getDate()+'日 星期'+now.getDay()
+            +weekArr[now.getDay()]
+            // 三目运算符 条件？条件成功：条件不成功
+            var hour = now.getHours()<10?0 + now.getHours : now.getHours
+
+            time.innerText=now.getHours(+':'+now.getMinutes()+':'+now.getSeconds()
+
+            
+        }
+        // 函数调用
+        showTime()
+    </script>
+</body>
+</html>

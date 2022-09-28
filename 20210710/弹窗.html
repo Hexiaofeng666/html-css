@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            width: 100%;
+            margin-top: 0;
+            background-color: white;
+            /* background-color: rgba(99, 89, 89, 0.2); */
+        }
+        .one{
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            margin-top: 0;
+            background-color: rgba(99, 89, 89, 0.2);
+        }
+        .alert{
+            width: 400px;
+            height: 200px;
+            margin: auto;
+            margin-top: 150px;
+            background-color: white;
+        }
+        a{
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid black;
+            
+        }
+        a:nth-of-type(2){
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="one">
+        <div class="alert">
+            <h1>提示</h1>
+            <p>这是一段信息</p>
+            <a href="#">取消</a>
+            <a href="#">确定</a>
+        </div>
+    </div>
+</body>
+</html>

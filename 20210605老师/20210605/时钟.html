@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <div>
+       <p id='date'></p>
+       <p id='time'></p>
+    </div>
+    <script>
+        var date = document.getElementById('date')
+        var time = document.getElementById('time')
+        
+        // 定时器 时间单位是：ms
+        setInterval(showTime, 1000);
+      
+        // 针对重复性的代码，为了提高代码复用率，使用函数封装(只要不调用函数，那么函数的内容就不会执行)
+        function showTime() {   
+          // Date 对象
+          var now = new Date()
+          // var weekArr = ['天','一','二','三','四','五','六']
+          var weekstr = '天一二三四五六'
+          // weekArr[now.getDay()]
+          date.innerText = now.getFullYear() + '年' + (now.getMonth() + 1) + '月' + now.getDate() + '日 星期' + weekstr.charAt(now.getDay())
+
+          // 三目运算符  条件？条件成功 : 条件不成功
+          var hour = now.getHours() < 10 ? '0' + now.getHours() : now.getHours()
+          time.innerText = hour + ':' + now.getMinutes() + ':' + now.getSeconds()
+        }
+        showTime()
+      
+    </script>
+</body>
+</html>

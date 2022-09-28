@@ -1,0 +1,23 @@
+div{
+  height: 60px;
+  background-color: orange;
+}
+// .size1{
+//   width: 20%;
+// }
+// .size2 {
+//   width: 40%;
+// }
+
+// 递归  通过调用自己本身重复做一件事情，形成循环
+// less没有循环
+// when 进行条件判断
+.width(@n,@i:1) when (@i<=@n){
+  // 条件符合的情况下
+  .size@{i}{
+    width: (100% / @n)*@i;
+  }
+
+  .width(@n,(@i+1))
+}
+.width(7);

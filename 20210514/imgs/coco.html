@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            width: 80%;
+            margin: auto;
+        }
+        li{
+            width: 23%;
+            display: inline-block;
+            position: relative;
+        }
+        li:nth-child(n+2){
+            margin-left: 20px;
+        }
+        img{
+            width: 100%;
+            /* 过渡动画 */
+            transition: all 0.5s;
+            /* z-index: 1; */
+        }
+        div{
+            position: absolute;
+            top: 0;
+            width: 130px;
+            height: 130px;
+            /* z-index: 0; */
+            /* width: 0;
+            height: 0; */
+            border-radius: 50%;
+            /* a设置透明度：范围0~1之间，越接近1，越不透明 */
+            background-color: rgba(255, 165, 0, 0.6);
+            left: calc((100% - 130px)/2);
+            top: calc((100% - 180px)/2);
+            /* 水平方向居中 */
+            text-align: center;
+            color: white;
+            /* 行高：调整文本在竖直方向的位置*/
+            line-height: 130px;
+            /* transform做效果的 */
+            /* scale比例收缩/放大 */
+            /* scale(0,0)为0:0，即为隐藏 */
+            transform: scale(0,0);
+        }
+        li:hover{
+            color: tomato;
+        }
+        li:hover div{
+            /* z-index: 2; */
+            transform: scale(1,1);
+            transition: all 0.5s;
+        }
+        li:hover img{
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ul>li*4>img[src='img/$.jpg']+p{你无忧拥抱世界，我用心呵护你}*1 -->
+    <ul>
+        <li>
+            <img src="./1.jpg" alt="">
+            <div>详情</div>
+            <p>你无忧拥抱世界，我用心呵护你</p>
+        </li>
+        <li>
+            <img src="./2.jpg" alt="">
+            <div>详情</div>
+            <p>你无忧拥抱世界，我用心呵护你</p>
+        </li>
+        <li>
+            <img src="./3.jpg" alt="">
+            <div>详情</div>
+            <p>你无忧拥抱世界，我用心呵护你</p>
+        </li>
+        <li>
+            <img src="./4.jpg" alt="">
+            <div>详情</div>
+            <p>你无忧拥抱世界，我用心呵护你</p>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+            /* vertical-align: middle; */
+            /* position: relative; */
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 100px auto;
+            /* animation-name: move; */
+            animation: move 3s linear infinite;
+            /* 设置旋转点 */
+            transform-origin: 0% 0%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        @keyframes move{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        section{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: green;
+            margin: auto ;
+            /* vertical-align: middle; */
+            /* line-height: 50%; */
+            position: absolute;
+            top: calc((100% - 20px) / 2);
+            left: calc((100% - 20px) / 2);
+        }
+    </style>
+</head>
+<body>
+    <section></section>
+    <div>
+
+    </div>
+</body>
+</html>

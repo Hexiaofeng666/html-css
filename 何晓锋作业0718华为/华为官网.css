@@ -1,0 +1,329 @@
+body {
+    width: 100%;
+    /* background-color: gainsboro; */
+}
+/*  * 星号是选中页面中所有标签，通配选择器 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 去掉列表前面的序号 */
+    list-style: none;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 100px;
+}
+header > div:first-of-type {
+    height: 25px;
+    background-color: black;
+}
+header > div:first-of-type span {
+    float: right;
+    color: white;
+    background-color: black;
+    margin-right: 50px;
+    font-size: 12px;
+    line-height: 25px;
+}
+header > div:first-of-type span:nth-of-type(3)::before {
+    content: url(./imgs/集团网站.png);
+    position: relative;
+    left: -3px;
+    top: 3px;
+}
+header > div:first-of-type span:nth-of-type(2)::before {
+    content: url(./imgs/语言.png);
+    position: relative;
+    left: -3px;
+    top: 3px;
+}
+header > div:first-of-type span:nth-of-type(1)::before {
+    content: url(./imgs/登录.png);
+    position: relative;
+    left: -3px;
+    top: 3px;
+}
+header > div:first-of-type span::after {
+    content: url(./imgs/下箭头.png);
+    position: relative;
+    /* background-color: white;
+    color: white; */
+    left: 3px;
+    top: 3px;
+}
+/* 导航条 */
+/* .daohang>ul:nth-of-type(1):before{
+    content: url(http://www-file.huawei.com/-/media/corp2020/home/banner/4/has2021-cn2.jpg);
+    position: relative;
+    left: -3px;
+    top: 3px;
+} */
+
+ .daohang span:nth-of-type(1)::before{
+    content: url(./imgs/搜索.png);
+    position: relative;
+    left: -3px;
+    top: 3px;
+}
+.daohang span:nth-of-type(2)::before{
+    content: url(./imgs/购买.png);
+    position: relative;
+    left: -3px;
+    top: 3px;
+}
+.daohang span:nth-of-type(2)::after{
+    content: url(./imgs/下箭头.png);
+    position: relative;
+    /* left: -5px; */
+    top: 3px;
+}
+header > div:last-of-type {
+    height: 75px;
+    background-color: white;
+}
+
+header > div:last-of-type img {
+    height: 35px;
+    margin: 20px 50px;
+}
+header > div:last-of-type ul {
+    display: inline-block;
+    margin-left: 50px;
+}
+header > div:last-of-type ul li {
+    float: left;
+    margin-left: 30px;
+    line-height: 75px;
+}
+header > div:last-of-type span {
+    float: right;
+    line-height: 75px;
+    margin-right: 50px;
+}
+
+.banner-img {
+    width: 100%;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+hr {
+    border-color: red;
+    width: 50px;
+    margin: 0 auto 30px;
+}
+.box {
+    width: 100%;
+    height: 350px;
+    padding: 0 70px;
+    margin-bottom: 50px;
+}
+.box > div {
+    height: 100%;
+    position: relative;
+    display: inline-block;
+}
+.box img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.cell1 > div:first-of-type, .cell2 > div:last-of-type{
+    width: 65%;
+}
+.cell1 > div:last-of-type, .cell2 > div:first-of-type {
+    
+    width: 30%;
+}
+.cell3 >div{
+    width: 33%;
+}
+.cell1 > div:last-of-type, .cell2 > div:last-of-type {
+    float: right;
+}
+
+.box p {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+.box p strong {
+    display: block;
+    font-size: 26px;
+}
+.cell2 {
+    margin: 50px 0;
+}
+/* 大图＋按钮 */
+.datu{
+    position: relative;
+}
+.datu button{
+    position: absolute;
+    left: 50%;
+    top: 65%;
+}
+/* 新闻与活动 */
+.newsbt{
+    margin: auto;
+    width: 90%;
+    height: 400px;
+    /* display: flex; */
+    
+}
+.act div{
+    width: 31%;
+    height: 100%;
+    display: inline-block;
+    margin: 10px;
+    background-color: gainsboro;
+    position: relative;
+    float: left;
+    /* margin-top: 0; */
+}
+.act img{
+    width: 100%;
+    height: 80%;
+}
+.act span{
+    opacity: 0.8;
+}
+.wen{
+    height: 20%;
+    /* overflow: hidden; */
+    /* overflow-y: scroll;
+    display: inline-block; */
+}
+.wen span{
+    font-size: small;
+    
+}
+.act button{
+    margin: auto;
+}
+
+.wenzi{
+    /* float: right; */
+    overflow-y: scroll;
+}
+.wenzi>span>*:nth-child(2n+1){
+    margin: auto;
+    margin-top: 20px;
+}
+.wenzi h4{
+   font-size: 20px;
+}
+
+/* 按钮 */
+button {
+    width: 170px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 17px;
+    cursor: pointer;
+}
+button:hover {
+    border: none;
+    background-color: rgb(196, 2, 11);
+    color: white;
+}
+.button{
+    text-align: center;
+    /* padding: 30px 0; */
+}
+.button button{
+    margin: 30px 20px;
+}
+
+/* 底部 */
+.bottom{
+    margin-top: 10%;
+    width: 100%;
+    background-color: #f2f2f2;
+    
+}
+.bottom>div{
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+}
+/* 底部 首页行 */
+.bottom>div>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    color: #444343;
+    border-bottom: 1px solid gray;
+}
+
+/* ul-li */
+.bottom>div>div:nth-of-type(2){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(204, 201, 201);
+    
+}
+.bottom>div>div:nth-of-type(2) ul{
+    float: left;
+    width: 20%;
+    padding: 0 15px;
+}
+.bottom div div:nth-of-type(2) li{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #595757;
+}
+.bottom div div:nth-of-type(2) li:first-of-type{
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 40px;
+}
+/* 图标行 */
+.bottom>div>div:nth-of-type(3){
+    line-height: 40px;
+    margin: 30px 0;
+}
+.bottom>div>div:nth-of-type(3)>*{
+    display: inline-block;
+    
+}
+
+.bottom>div>div:nth-of-type(3) ul li{
+    margin: 0 30px;
+    display: inline-block;
+    font-size: 14px;
+}
+.bottom>div>div:nth-of-type(3) div{
+    float: right;
+}
+.bottom>div>div:nth-of-type(3) div img{
+    margin: 5px;
+}
+/* 最后一行 */
+.bt{
+    /* width: 80%; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    
+}
+.bt ul{
+    margin: auto;
+}
+.bt li{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 14px;
+}
+

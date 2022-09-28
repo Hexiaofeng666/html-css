@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            width: 100%;
+
+        }
+
+        body {
+            width: 1300px;
+        }
+
+        .box {
+            margin: auto;
+            width: 70%;
+        }
+        .title{
+            width: 100%;
+            /* height: 200px; */
+        }
+        .title>* {
+            display: inline-block;
+        }
+
+        .title>img {
+            width: auto;
+        }
+
+        .title>div {
+            width: 68%;
+            /* float: right; */
+        }
+
+        #details {
+            display: none;
+        }
+
+        #clicka {
+            text-decoration: none;
+            color: red;
+        }
+
+        /* .details1[open] {
+            display: inline;
+        } */
+
+        /* .title a:hover .none {
+            display: inherit;
+        } */
+
+        .news {
+            margin-top: 50px;
+        }
+
+        .news>div {
+            height: 40px;
+            border-bottom: 1px dashed black;
+            /* margin-top: 20px; */
+        }
+
+        .news>div>span:nth-of-type(2) {
+            float: right;
+        }
+
+        /* 菱形 */
+        .rhombus {
+            display: inline-block;
+            height: 20px;
+        }
+
+        .rhombus>* {
+            width: 5px;
+            height: 5px;
+            background: black;
+        }
+
+        .rhombuone {
+            transform: rotateZ(39deg)skew(-16deg, 2deg);
+            margin: 14px 46px -13px 41px;
+
+        }
+
+        .rhombutwo {
+            transform: rotateZ(39deg)skew(-16deg, 2deg);
+            margin: 8px 28px -100px 51px;
+
+        }
+
+        .rhombuthree {
+            transform: rotateZ(128deg)skew(-16deg, 2deg);
+            margin: 90px 5px -8px 46px;
+
+        }
+
+        .rhombufour {
+            transform: rotateZ(-50deg)skew(-16deg, 2deg);
+            margin: 14px 36px -4px 46px;
+        }
+
+        /* 固定悬浮框 */
+        .bottom {
+            position: fixed;
+            right: 60px;
+            top: 255px;
+            width: 100px;
+            height: 200px;
+            border: 1px solid gray;
+            display: inline-block;
+        }
+
+        .bottom div {
+            position: relative;
+            width: 80%;
+            height: 35px;
+            top: 45px;
+            left: -35px;
+            margin: 5px 0;
+            z-index: 2;
+            background-color: #fd5b1a;
+            text-align: center;
+            line-height: 35px;
+            color: white;
+        }
+
+        .bottom span {
+            width: 70%;
+            border-top: 1px solid gray;
+            bottom: 10px;
+            right: 0;
+            color: gray;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <!-- 顶部 -->
+        <div class="title">
+            <img src="./img1.jpg" alt="">
+            <div>
+                <h3>流通事业部09年度营销会议胜利召开</h3>
+                <p style="color:rgba(3, 0, 0, 0.6)">2015-03-31</p>
+                <p style="display: inline;">2009年5月8日至10日，流通事业部09年度营销会议
+                    胜利召开，公司经理xxx在会上讲话，并为08财年优秀销售
+                    团队颁奖。事务部经理xxx事业部企划xxx会上发布了2009
+                    财年公司的营销策略何产品市场推广策略等。
+                </p>
+                <p id="details">STEAM科学教育品牌玩创Lab获近亿元融资；飞驰学院宣布完成首轮融资。
+                </p>
+                <a href="#" onclick="spanClick()" id="clicka">【更多】</a>
+            </div>
+        </div>
+        <!-- 内容 -->
+        <div class="news">
+            <div>
+                <div class="rhombus">
+                    <p class="rhombuone"></p>
+                    <p class="rhombutwo"></p>
+                    <p class="rhombuthree"></p>
+                    <p class="rhombufour"></p>
+                </div>
+                <span>流通事业部09年年度营销会议胜利召开</span>
+                <span>2015-01-23</span>
+            </div>
+            <div>
+                <div class="rhombus">
+                    <p class="rhombuone"></p>
+                    <p class="rhombutwo"></p>
+                    <p class="rhombuthree"></p>
+                    <p class="rhombufour"></p>
+                </div>
+                <span>流通事业部09年年度营销会议胜利召开</span>
+                <span>2015-01-23</span>
+            </div>
+            <div>
+                <div class="rhombus">
+                    <p class="rhombuone"></p>
+                    <p class="rhombutwo"></p>
+                    <p class="rhombuthree"></p>
+                    <p class="rhombufour"></p>
+                </div>
+                <span>流通事业部09年年度营销会议胜利召开</span>
+                <span>2015-01-23</span>
+            </div>
+            <div>
+                <div class="rhombus">
+                    <p class="rhombuone"></p>
+                    <p class="rhombutwo"></p>
+                    <p class="rhombuthree"></p>
+                    <p class="rhombufour"></p>
+                </div>
+                <span>流通事业部09年年度营销会议胜利召开</span>
+                <span>2015-01-23</span>
+            </div>
+
+            <div>
+                <div class="rhombus">
+                    <p class="rhombuone"></p>
+                    <p class="rhombutwo"></p>
+                    <p class="rhombuthree"></p>
+                    <p class="rhombufour"></p>
+                </div>
+                <span>流通事业部09年年度营销会议胜利召开</span>
+                <span>2015-01-23</span>
+            </div>
+            <div>
+                <div class="rhombus">
+                    <p class="rhombuone"></p>
+                    <p class="rhombutwo"></p>
+                    <p class="rhombuthree"></p>
+                    <p class="rhombufour"></p>
+                </div>
+                <span>流通事业部09年年度营销会议胜利召开</span>
+                <span>2015-01-23</span>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div>
+            公司新闻
+        </div>
+        <span>
+            MORE
+        </span>
+    </div>
+
+    <script>
+        function spanClick() {
+            document.getElementById("details").style.display = 'inline';
+            document.getElementById("clicka").style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

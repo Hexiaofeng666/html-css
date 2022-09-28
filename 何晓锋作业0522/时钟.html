@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置页面每秒刷新 -->
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 600px;
+            height: 600px;
+            background-color: grey;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+        }
+        section{
+            width: 85%;
+            height: 150px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-75px);
+            left: 7.5%;
+        }
+        #date{
+            float: right;
+            /* background-color: green; */
+            height: 20px;
+        }
+        #time{
+            /* background-color: red; */
+            position: relative;
+            top: -40px;
+            text-align: center;
+            font-size: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <p id="date"></p>
+            <p id="time"></p>
+        </section>
+    </div>
+    <script>
+        function nowtime(){
+            // 先获取页面的标签
+            var date = document.getElementById('date')
+            console.log(date);
+            var time = document.getElementById('time')
+            console.log(time);
+            // 获取时间
+            var now = new Date()
+
+            
+            // 年
+            var year = now.getFullYear()
+            console.log(year);
+            // 月
+            var month = now.getMonth()+1
+            console.log(month);
+            // 日
+            var day = now.getDate()
+            console.log(day);
+            // 周几
+            var week = now.getDay()
+            console.log(week);
+            // 
+            var weekday = "星期" + "日一二三四五六".charAt(new Date().getDay())
+            // 整体时间
+            var str = year+'年'+month+'月'+day+'日 '+weekday
+            console.log(str);
+            // 往标签里面插入内容
+            date.innerText=str
+
+
+            // 判断是否为一位数，如果是则加个0
+            // 时
+            var hours = ((now.getHours() < 10) ? "0" : "")+now.getHours() 
+            console.log(hours);
+            // 秒
+            var minutes = ((now.getMinutes() < 10) ? "0" : "")+now.getMinutes() 
+            console.log(minutes);
+            // 分
+            var seconds = ((now.getSeconds() < 10) ? "0" : "")+now.getSeconds()
+            console.log(seconds);
+            var timestr = hours+':'+minutes+':'+seconds
+            console.log(timestr); 
+            time.innerText=timestr
+            // 每1000毫秒调用一次nowtime函数
+            window.setInterval('nowtime()',1000);
+        }
+        // 调用一次
+        nowtime()
+    </script>
+</body>
+</html>

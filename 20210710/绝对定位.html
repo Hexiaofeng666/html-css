@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            border: 5px solid red;
+            height: 400px;
+        }
+
+        body {
+            margin: 0;
+            border: 5px solid orange;
+            height: 300px;
+        }
+
+        section {
+            border: 5px solid yellow;
+            height: 200px;
+        }
+
+        div {
+            border: 5px solid blue;
+            height: 100px;
+            /* position: relative; */
+        }
+
+        span {
+            background-color: green;
+            color: white;
+            margin-left: 10px;
+            padding: 0 10px;
+            /* 改变元素可以进行移动的范围，即改变参照物，使用绝对定位 */
+            /* 1.元素脱离文档流，分层，元素本身的空间会被释放 */
+            /* 2.参照物，往父类查出,找的是最近父类中有设置定位的为参照物，
+            若没有则继续往上层查找，直到找到即为参照物，若都没有找到，则以页面的窗口为参照物 */
+            position: absolute;
+        }
+        span:nth-child(1){
+            bottom: 0;
+        }
+        span:nth-child(2){
+            /* 分层后会造成元素之间产生覆盖效果 */
+            /* 显示层级，没有单位，等级越大，越显示在页面的前面 */
+            /* 无论分多少层，覆盖几次，每个定位分层的元素默认的显示层级都为：0 */
+            z-index: 1;
+        }
+        span:nth-child(3){
+            /* 取消边框 */
+            /* border: none; */
+            /* 取消下划线 */
+            /* text-decoration: none; */
+            /* 取消加粗 */
+            /* font-weight: normal; */
+            /* 取消斜体 */
+            /* font-style: normal; */
+            /* 取消背景样式 */
+            /* background: none; */
+            /* 将定位设置静态==取消定位 */
+            /* position: static; */
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <span>01</span>
+            <span>02</span>
+            <span>03</span>
+            <span>04</span>
+        </div>
+    </section>
+    
+
+</body>
+
+</html>

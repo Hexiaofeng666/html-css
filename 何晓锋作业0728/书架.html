@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #21bffc;
+        }
+        body>div{
+            
+            margin: auto;
+            width: 400px;
+            height: 400px;
+            position: relative;
+            /* text-align: center; */
+            
+        }
+        body>div>div{
+            width: 250px;
+            height: 300px;
+            position: absolute;
+            margin: 50px 100px;
+            /* transform: translate(100px,50px); */
+            /* background-color: black; */
+        }
+        div{
+            /* 开启 3D 功能 */
+            transform-style: preserve-3d;
+            /* 设置观察距离，视距离，镜头到元素的距离 */
+            perspective: 600px;
+            /* 设置观察点 */
+            perspective-origin: 30% 0%;
+            /* 设置旋转点 */
+            transform-origin: 0% 50%;
+        }
+        body>div>div:nth-of-type(1){
+            transform: rotate3d(0,1,0,-80deg);
+            background-color: #0f7f11;
+        }
+        body>div>div:nth-of-type(2){
+            transform: rotate3d(0,1,0,-70deg);
+            background-color: #fda328;
+        }
+        body>div>div:nth-of-type(3){
+            transform: rotate3d(0,1,0,-60deg);
+            background-color: #fffd38;
+        }
+        body>div>div:nth-of-type(4){
+            transform: rotate3d(0,1,0,-50deg);
+            background-color: #0b24fb;
+        }
+        body>div>div:nth-of-type(5){
+            /* transform: rotate3d(0,1,0,120deg); */
+            background-color: #fd0c1f;
+        }
+        body>div>div:nth-of-type(1):active{
+            transform: rotate3d(0,1,0,-180deg);
+            transition: all 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+           
+        </div>
+        <div>
+           
+        </div>
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

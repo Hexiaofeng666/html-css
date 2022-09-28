@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+        table {
+            margin: 50px auto;
+            /* 设置相邻单元格的边框距离为 0 */
+            border-spacing: 0;
+            /* 设置表格边框合并为单一的边框，去掉重复的边框 */
+            border-collapse: collapse;
+            display: inline-block;
+            padding: 20px;
+            box-shadow: 0px 0px 60px rgba(41, 12, 127, 0.2);
+        }
+        caption:nth-of-type(1){
+            height: 100px;
+        }
+        caption:nth-of-type(1) p{
+            display: inline-block;
+            font-size: 35px;
+            letter-spacing: 1vw;
+            line-height: 60px;
+            border-bottom: 1px solid black;
+            /* height: 65px; */
+            
+        }
+        caption:nth-of-type(2){
+            margin-bottom: 15px;
+            /* letter-spacing: 1pc; */
+            /* display: flex; */
+        }
+         p{
+            display: inline-block;
+        }
+        caption:nth-of-type(2) p:nth-of-type(2){
+            margin-left: 2pc;
+            margin-right: 4pc;
+            letter-spacing: 1pc;
+        }
+        caption:nth-of-type(2) p:nth-of-type(3){
+            margin-right: 1pc;
+        }
+        td,th {
+            border: 2px solid red;
+            text-align: center;
+        }
+        td {
+            height: 30px;
+            width: 100px;
+            letter-spacing: 1pc;
+        }
+        td:nth-of-type(1){
+            width: 200px;
+        }
+        td:nth-of-type(4),td:nth-of-type(5){
+            width: 150px;
+            text-align: left;
+            letter-spacing: 4px;
+        }
+        th {
+            width: 100px;
+            height: 40px;
+        }
+        tr:last-of-type td{
+            /* width: 130px; */
+        }
+    </style>
+</head>
+<body>
+    <!-- table 定义的是表格 -->
+    <table>
+        <!-- caption 定义的是表格中的标题 -->
+        <caption><p> 费用报销单</p></caption>
+        <caption>
+            <p>报销日期</p>
+            <p>年月日</p>
+            <p>附件</p>
+            <p>张</p>
+        </caption>
+        <tbody>
+            <tr>
+                <td colspan="2">费用项目</td>
+                <td>类别</td>
+                <td>金额</td>
+                <td rowspan="2">负责人（签章）</td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+                <td rowspan="2">审核意见</td>
+                <td rowspan="2"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="2">报销金额合计</td>
+                <td></td>
+                <td></td>
+                <td>￥</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="letter-spacing: 2vw;">
+                    <p style="letter-spacing: 0; margin-left: -10pc;">核实金额(大写)</p>
+                    佰拾万任佰拾元角分￥
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

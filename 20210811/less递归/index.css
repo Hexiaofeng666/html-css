@@ -1,0 +1,19 @@
+div {
+  height: 40px;
+  background-color: orange;
+}
+.size1 {
+  width: 20%;
+}
+.size2 {
+  width: 40%;
+}
+.size3 {
+  width: 60%;
+}
+.size4 {
+  width: 80%;
+}
+.size5 {
+  width: 100%;
+}

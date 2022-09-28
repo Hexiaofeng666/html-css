@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 将标签自带的样式进行清除，将标签回复为一个基础标签 -->
+  <link rel="stylesheet" href="./base.css">
+  <style>
+     .left_content{
+       width: 30%;
+       position: fixed;
+       height: 100%;
+       background: white;
+       z-index: 1000;
+       padding: 20px 30px;
+     }
+     .nav,.nav ul{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+     }
+     .nav>img{
+       width: 38px;
+     }
+     .nav ul{
+       width: 85%;
+     }
+     .nav ul li:first-child{
+       display: flex;
+       font-weight: bold;
+       font-size: 17px;
+       width: 80%;
+       justify-content: space-around;
+     }
+     .text{
+       position: absolute;
+       width: 250px;
+       /* left: calc((100% - 200px)/2); */
+       /* 不考虑元素自身的大小，将元素进行垂直/水平方向进行居中设置 */
+       top: 50%;
+       left: 50%;
+       transform: translateX(-35%) translateY(-10%);
+     }
+     .text h1{
+       font-weight: bold;
+       font-size: 29px;
+       margin-bottom: 40px;
+     }
+     .text div{
+       display: flex;
+       color: #009758;
+       align-items: center;
+     }
+     .text div div{
+       font-size: 17px;
+     }
+     .text img{
+       margin-right: 5px;
+     }
+     .text>div>span{
+       border: 1px solid #009758;
+       border-radius: 40px;
+       padding:4px 15px;
+       font-size: 18px;
+       margin-left: 30px;
+     }
+     .right_content{
+       width: 70%;
+       margin-left: 30%;
+     }
+     .right_content img{
+       width: 100%;
+     }
+
+     @media screen and (max-width:1128px){
+       .left_content{
+         width: 100%;
+         position:static;
+       }
+       .text{
+         position: static;
+         transform: translateX(0) translateY(0);
+         width: auto;
+       }
+       .nav ul{
+         width: 94%;
+       }
+       .nav ul li:first-child{
+         display: inline-block;
+       }
+       .nav ul li:first-child span{
+         margin-right: 4%;
+       }
+       .text h1{
+         margin: 15px 0 10px;
+       }
+       .right_content{
+         width: 100%;
+         margin: 0;
+       }
+       
+     }
+     @media screen and (max-width:706px) {
+       .left_content{
+         padding:18px 15px;
+       }
+       .text h1{
+         font-size: 24px;
+         margin: 0;
+       }
+       .nav,.text>div{
+         display: none;
+         /* visibility: hidden; */
+       }
+     }
+  </style>
+
+</head>
+<body>
+   <div class="left_content">
+     <section class="nav">
+       <img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/images/logo.svg" alt="">
+       <ul>
+         <li><span>门店</span><span>我的账户</span><span>菜单</span></li>
+         <li><img src="https://www-static.chinacdn.starbucks.com.cn/prod/assets/icons/icon-hamburger.svg" alt=""></li>
+       </ul>
+     </section>
+     <section class="text">
+       <h1>心情惬意，来杯咖啡吧 ☕</h1>
+      <div>
+        <div>
+          <img src="https://www.starbucks.com.cn/assets/icons/icon-account.svg" alt="">
+          <span>登录</span>
+        </div>
+        <span>注册</span>
+      </div>
+     </section>
+   </div>
+
+   <div class="right_content">
+     <img src="https://artwork.starbucks.com.cn/banners-homepage-banner/main_61babe13-d569-476b-8bd6-e75068943318.jpg" alt="">
+   </div>
+</body>
+</html>

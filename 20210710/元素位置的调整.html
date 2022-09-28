@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            text-align: center;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /* 对于元素的水平方式居中，块标签使用的margin:auto */
+            /* margin: auto; */
+        }
+        span{
+            background-color: tomato;
+            font-size: 30px;
+            /* 行标签属于内容标签，包裹文本内容，居中方式使用：通过父类设置text-align:center */
+            /* 前提条件：元素要居中：要居中的容器都要有多余的空间进行移动 */
+            text-align: center;
+            
+        }
+        button{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <span>内容1</span>
+    <span>
+        <b>内容</b>
+    </span>
+
+    <button>
+        按钮
+    </button>
+</body>
+</html>

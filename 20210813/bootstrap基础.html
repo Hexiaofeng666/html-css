@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 先引入bootstrap.css文件，将样式引入 -->
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.css">
+    <!-- 引入js -->
+    <!-- 注意：由于bootstrap.js是基于jquery编写，所以要在引入的时候先引入jquery -->
+    <script src="./bootstrap-3.4.1-dist/js/jq-3.5.1.js"></script>
+    <script src="/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- navbar-inverse 反色（黑色 ） navbar-default默认色 灰白的-->
+    <!-- navbar-fixed-bottom 导航栏固定在底部 -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <!-- container 响应式布局，有设置媒体查询，根据不同的的屏幕大小改变，并且内容始终位于中间 -->
+        <!-- container-fluid   仅给元素左右两边添加15px的内边距 -->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- 菜单 -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">菜鸟教程</a>
+            </div>
+
+
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="">首页</a></li>
+                    <li><a href="">商品</a></li>
+                    <li><a href="">分类</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 简易式的导航栏 -->
+    <ul class="nav nav-tabs">
+        <li><a href="">01</a></li>
+        <li class="active"><a href="">02</a></li>
+        <li><a href="">03</a></li>
+        <li><a href="">04</a></li>
+        <li><a href="">05</a></li>
+    </ul>
+
+    <ul class="nav nav-pills nav-justified">
+        <li><a href="">01</a></li>
+        <li class="active"><a href="">02</a></li>
+        <li class="disabled"><a href="">03</a></li>
+        <li><a href="">04</a></li>
+        <li><a href="">05</a></li>
+    </ul>
+
+
+    <div class="container">
+        <!-- 字体图标:文本内容，通过class设置对应的图标 -->
+        <span class="glyphicon glyphicon-search" style="color: blue ; font-size: 30px;"></span>
+
+        <!-- 下拉菜单 -->
+        <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle" id="dropmenu" data-toggle="dropdown">下拉菜单
+                <span class="dropdown-menu" aria-labelledby="dropmenu"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropmenu">
+                <li><a href="">html5</a></li>
+                <li><a href="">css</a></li>
+                <!-- 分割线 -->
+                <div class="divider"></div>
+                <li><a href="">java</a></li>
+            </ul>
+        </div>
+
+        <br>
+        <!-- 按钮 -->
+        <button class="btn btn-success">成功按钮</button>
+        <button class="btn btn-danger disabled">危险按钮</button>
+        <button class="btn btn-warning">提示按钮</button>
+        <button class="btn btn-info">信息按钮</button>
+        <button class="btn btn-primary">主要按钮</button>
+        <button class="btn btn-default">默认按钮</button>
+        <br>
+        <button class="btn btn-success btn-block">成功按钮</button>
+        <button class="btn btn-warning btn-lg">提示大按钮</button>
+        <button class="btn btn-warning btn-sm">提示小按钮</button>
+
+        <!-- 按钮组 -->
+        <div class="btn-group" style="margin: 20px 0;">
+            <button class="btn btn-warning">提示按钮</button>
+            <button class="btn btn-info">信息按钮</button>
+        </div>
+
+        <!-- 文本居左居中居右设置 -->
+        <p class="text-left"> 111</p>
+        <div class="text-center">222</div>
+        <section class="text-right">333</section>
+    </div>
+
+
+
+</body>
+
+</html>

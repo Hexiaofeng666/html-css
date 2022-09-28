@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/base.css">
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+  <script src="./bootstrap-3.3.7-dist/js/jquery-3.1.1.js"></script>
+  <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <link rel="stylesheet" href="./css/category.css">
+  <link rel="stylesheet" media='(min-width:720px)' href="./css/dismin720px.css">
+  <link rel="stylesheet" media='(max-width:720px)' href="./css/dismax720px.css">
+
+</head>
+
+<body>
+  <!-- 顶部 -->
+  <div class="distoparea">
+    <img src="./imgs/img57.png" alt="">
+    <div id="myTab">
+      <ul class="myopacity">
+        <li><a class="active" href="#concern">关注</a></li>
+        <li><a href="#square">广场</a></li>
+      </ul>
+
+    </div>
+    <img src="./imgs/img58.png" alt="">
+  </div>
+  <!-- 内容 -->
+  <div class="discontent tab-content">
+    <!-- 关注 -->
+    <div id="concern" class="concern click">
+      <!-- <img src="./imgs/img58.png" alt=""> -->
+      <img src="./imgs/img59.png" alt="">
+      <p>登录看关注人最新动态</p>
+      <span>立即登录</span>
+    </div>
+    <!-- 广场 -->
+    <div id="square" class="square">
+      <!-- 一个评论 -->
+      <div class="discuss">
+        <!-- 名称部分 -->
+        <div>
+          <span><img src="./imgs/img62.jpg" alt="">小米新品早知道</span>
+          <img src="./imgs/img63.png" alt="">
+        </div>
+        <h2>秒级速热新鲜争水，即热净水器Q600来了</h2>
+        <p>
+          小米即热净水器Q600——首款净热─体厨下净水机正式开启<br />预售。作为小米争水器家族里首款即热Q系列机型，<br />Q600将即热厚膜加热集成到龙头是...<span>查看全文</span>
+        </p>
+        <img src="./imgs/img64.jpg" alt="">
+        <div>
+
+          <span><img src="./imgs/img65.png" alt="">小米即热净水器Q600</span>
+        </div>
+        <p>
+          <span>米圈官方：</span>【互动有奖】奖品:知吾煮抗摔玻璃保鲜盒715ml 3个规则:说说全新小米即热争水器Q600哪点打动你下单购买?
+        </p>
+        <!-- 三连 -->
+        <div>
+          <img src="./imgs/转发.png" alt="">
+          <span><img src="./imgs/评论.png" alt="">94</span>
+          <span><img src="./imgs/点赞.png" alt="">2026</span>
+        </div>
+        <!-- 边框条 -->
+        <div class="bottomborder">
+
+        </div>
+      </div>
+      <div class="discuss">
+        <!-- 名称部分 -->
+        <div>
+          <span><img src="./imgs/img62.jpg" alt="">小米新品早知道</span>
+          <img src="./imgs/img63.png" alt="">
+        </div>
+        <h2>秒级速热新鲜争水，即热净水器Q600来了</h2>
+        <p>
+          小米即热净水器Q600——首款净热─体厨下净水机正式开启<br />预售。作为小米争水器家族里首款即热Q系列机型，<br />Q600将即热厚膜加热集成到龙头是...<span>查看全文</span>
+        </p>
+        <img src="./imgs/img64.jpg" alt="">
+        <div>
+
+          <span><img src="./imgs/img65.png" alt="">小米即热净水器Q600</span>
+        </div>
+        <p>
+          <span>米圈官方：</span>【互动有奖】奖品:知吾煮抗摔玻璃保鲜盒715ml 3个规则:说说全新小米即热争水器Q600哪点打动你下单购买?
+        </p>
+        <!-- 三连 -->
+        <div>
+          <img src="./imgs/转发.png" alt="">
+          <span><img src="./imgs/评论.png" alt="">94</span>
+          <span><img src="./imgs/点赞.png" alt="">2026</span>
+        </div>
+        <!-- 边框条 -->
+        <div class="bottomborder">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 底部 -->
+  <div class="bottom">
+    <a href="./index.html">
+      <div>
+        <img src="./imgs/首页.png" alt="">
+        <p>首页</p>
+      </div>
+    </a>
+    <a href="./category.html">
+      <div>
+        <img src="./imgs/分类.png" alt="">
+        <p>分类</p>
+      </div>
+    </a>
+    <a href="./discover.html">
+      <div>
+        <img src="./imgs/互联网-选中.png" alt="">
+        <p>米圈</p>
+      </div>
+    </a>
+    <a href="./cart.html">
+      <div>
+        <img src="./imgs/购物车.png" alt="">
+        <p>购物车</p>
+      </div>
+    </a>
+    <a href="./user.html">
+      <div>
+        <img src="./imgs/我的.png" alt="">
+        <p>我的</p>
+      </div>
+    </a>
+
+
+
+
+  </div>
+
+  <script>
+    $(function () {
+      $('#myTab a:first').tab('show');
+    })
+    $('#myTab a').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+      console.log(this);
+    })
+  </script>
+</body>
+
+</html>

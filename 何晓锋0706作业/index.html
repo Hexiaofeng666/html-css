@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 320px;
+            height: 250px;
+            display: inline-block;
+            background-image: url(./bg.jpg);
+            background-size: 200% 200%;
+            /* 去重,当容器大于背景图大小时，背景图片为了填充容器，会出现重复的图片 */
+            background-repeat: no-repeat;
+
+            /* border: 1px solid orange;
+            background-color: black; */
+        }
+        div:nth-of-type(2){
+            background-position: -320px 0;
+        }
+        div:nth-of-type(3){
+            background-position-y: -250px;
+        }
+        div:nth-of-type(4){
+            background-position: -320px -250px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

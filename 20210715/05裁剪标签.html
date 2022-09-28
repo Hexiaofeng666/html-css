@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 400px;
+            height: 400px;
+            background-color: green;
+            margin: 150px auto;
+
+
+            /* 设置超出部分隐藏 */
+            overflow: hidden;
+        }
+        div{
+            position: absolute;
+            /* 切圆角 */
+            border-radius: 50%;
+        }
+        div:first-of-type{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            left: 10px;
+            top: -25px;
+            /* 裁剪标签的方法 */
+            /* 
+                1.上方切掉的大小
+                2.从左到右保留的大小
+                3.从上到下保留的大小
+                4.左边切掉的大小    
+             */
+            clip: rect(25px,150px,125px,0px);
+        }
+        div:last-of-type{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            right: 10px;
+            top: -50px;
+            clip: rect(25px,200px,200px,0px);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>

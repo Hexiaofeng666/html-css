@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 直接放在html的style标签上，称为内部连接样式 -->
+    <style>
+        /* 给同一个标签设置样式的时候，最终样式展示为什么样子，取决于设置样式的优先级 */
+        /* 等级一致时，下面的代码会把上面的覆盖 */
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+        }
+        /* 3.后代选择器  父标签+' '+子标签 */
+        /* 查找父标签的“所有”后代 */
+        body div{
+            background-color: teal;
+        }
+        /* 直接后代选择器,用“>”    */
+        body>div{
+            background-color: yellow;
+        }
+        /* class选择器>标签选择器 */
+        area{
+            background-color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <!-- 行内样式 -->
+    <div style="background-color: blue;">内容</div>
+    <div class="area">
+        <section>
+            <div></div>
+        </section>
+    </div>
+</body>
+</html>

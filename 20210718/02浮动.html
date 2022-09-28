@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            /* 府东只能作业 */
+            /* 浮动会使元素脱离文档流 */
+            float: left;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            background-color: red;
+        }
+        .clear{
+            /* 设置清除浮动，一般情况下会单独设置一个class
+            专门用来清除浮动，否则会导致页面有你可能想不到的问题出现 */
+            clear: both;
+        }
+        div:nth-of-type(1){
+            float: left;
+            opacity: 0.5;
+        }
+        div:nth-of-type(2){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>首页</li>
+        <li>手机</li>
+        <li>电脑</li>
+        <li>平板</li>
+        <li>香蕉</li>
+        <li>苹果</li>
+        <li>桃子</li>
+        <li>榴莲</li>
+    </ul>
+    <div>1</div>
+    <section class="clear"></section>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</body>
+</html>

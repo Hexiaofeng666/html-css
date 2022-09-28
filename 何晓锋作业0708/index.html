@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f7f7f7;
+        }
+        .coffee{
+            width: 350px;
+            height: 400px;
+            display: inline-block;
+            text-align: center;
+        }
+        .coffee>div:nth-of-type(2) *{
+            display: inline-block;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+        .coffee:hover img{
+            box-shadow: 0px 0px 10px  black ;
+            /* margin-top: 10px; */
+        }
+        .coffee:hover h3,.coffee:hover sup{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>咖啡融合冰淇淋</h2>
+    <div class="coffee">
+        <div>
+            <img src="./affogato.jpg" alt="">
+        </div>
+        <div>
+            <h3>阿馥奇朵</h3>
+            <sup>TM</sup>
+        </div>
+    </div>
+    <div class="coffee">
+        <div>
+            <img src="./affogato.jpg" alt="">
+        </div>
+        <div>
+            <h3>麦芽雪冷萃</h3>
+            <sup>TM</sup>
+        </div>
+    </div>
+    <div class="coffee">
+        <div>
+            <img src="./affogato.jpg" alt="">
+        </div>
+        <div>
+            <h3>冷萃浮乐朵</h3>
+            <sup>TM</sup>
+        </div>
+    </div>
+    <div class="coffee">
+        <div>
+            <img src="./affogato.jpg" alt="">
+        </div>
+        <div>
+            <h3>气致</h3>
+            <sup>TM</sup>
+            <h3>冷萃浮乐朵</h3>
+            <sup>TM</sup>
+        </div>
+    </div>
+    <hr>
+</body>
+</html>

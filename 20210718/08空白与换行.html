@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            /* 
+                因为默认是遇到单词后换行，因为单词默认是不会在单词内换行的
+                如果说页面中单词过长或者页面上显示的是url会导致一行几乎是
+                没有内容的
+            */
+
+            /* 
+                该样式是英文的暴力换行，换行后可能会导致单词的意思发生改变，
+                一个单词可能会变成两个单词，出现措意的情况
+            */
+            /* word-break: break-all; */
+            /* 设置文本内容居中，会导致最后一行比较大且左右有空白处 */
+            /* text-align: center; */
+
+            /* 两端对齐
+                left    左对齐
+                center  居中
+                right   右对齐
+                justfy 两端对齐
+            */
+            text-align: justify;
+        }
+        p{
+            /* 类似pre标签的功能，会保留空格换行等空白符 */
+            /* white-space: pre; */
+
+            /* 会去掉所有的换行符，但是会保留换行符 */
+            /* white-space: pre-line; */
+
+            /* 会保留换行等空白符 */
+            /* white-space: pre-wrap; */
+
+            /* 不换行，也没有保留空白符 */
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        qwertyuiop asdewrgdfsdighil rxcvanm qweryiop qwertyuiop 
+        asdfghjl zxcvbnm qwertyuiop qwertyuiop asdfghl 
+        zxwarfedzsCovonm qwertyuip qwertyudasdfdvsiop asdighl 
+        rxcvonm qwertyuiop qwertyuiop asadSavdsAdghil rxcvbrnm 
+        gwertyuiop qwertyuiop asdsadvighjd oxcvonm qwertyuiop 
+        qwertyuiop asdfighil xedsvshvonm qwertyuiop qwertyuiop 
+        asdfgdafsvmhijl zxotbnm qwertyuiop qwertyuiop asdfgastijkl
+         zxovonm qwertyuiop qwertyuiop asdfghoewregrdid xeonm qweryup 
+         qwertyuiop asdfghili zxwfegrovbnm qwertyuiop qwertyuiop 
+         asdfghid zxolbnm qwecewgrtyuiop qwertywearefsgrdiop asdfghil 
+         rxovbnm qwertyuiop qwertyuiostfgeqpwfrgethjkl zxovbnm
+          qwertyuiop qwertyiop ase wcrefwdfghikl zxovbnim qwertyuiop 
+          qwertyuiop asdw gewefghikl zxcv eawbnm qwertyuiop 
+          qwertyuiop asdtsfdgfghjkl zxcvbnm qwertyuiop
+
+    </section>
+    <p>
+        <!-- code标签是用来限制代码片段的，会将字体变小 -->
+        <!-- pre会保留你所有的空格和换行 -->
+        
+    </p>
+</body>
+</html>

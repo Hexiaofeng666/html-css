@@ -1,0 +1,51 @@
+/* 动画的定位 */
+@keyframes myBG{
+    /* 开始位置要与本身样式一致 */
+    /* 要有开始from和结束to */
+    from{
+        background-color: salmon;
+    }
+    50%{
+        background-color: red;
+    }
+    to{
+        background-color: black;
+    }
+}
+#demo1{
+    height: 300px;
+    width: 300px;
+    background-color: salmon;
+    /* 设置动画的名字 */
+    animation-name: myBG; 
+    /* 持续时间 */
+    animation-duration: 2s;
+    /*线性的变化*/
+    animation-timing-function: linear;
+    /* 延迟几秒播放 */
+    animation-delay: 2s;
+    /* 循环次数 */
+    animation-iteration-count: infinite;
+    /* 动画方向（reverse反向) (alternate奇数正向播放 偶数倒叙播放) */
+    animation-direction: reverse;
+    /* 最后停留的状态(forwork结束)(backwards开始)(both两者都可以) */
+    animation-fill-mode: forwards;
+    /* animation: myBG 3s infinite; */
+}
+#demo2{
+    width: 200px;
+    height: 300px;
+    background-color: skyblue;
+    /* 过渡动画 */
+    transition: all 3s;
+}
+/* 1.伪类样式： */
+/* 选择器  :hover   ，代表鼠标悬停生效的样式 */
+/* 选择器  :active    ，代表鼠标点击生成的样式 */
+/* 2.有过渡动画怎么办呢 */
+/* 选择器  {  transition：样式（all所有样式） 3s } */
+#demo:hover{
+    width: 200px;
+    height: 100px;
+    background-color: skyblue;
+}

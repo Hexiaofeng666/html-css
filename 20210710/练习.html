@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #star_six_points {
+
+            width: 0;
+
+            height: 0;
+
+            display: block;
+
+            position: absolute;
+
+            border-left: 50px solid transparent;
+
+            border-right: 50px solid transparent;
+
+            border-bottom: 100px solid #de34f7;
+
+            margin: 10px auto;
+
+        }
+
+
+
+        #star_six_points:after {
+
+            content: "";
+
+            width: 0;
+
+            height: 0;
+
+            position: absolute;
+
+            border-left: 50px solid transparent;
+
+            border-right: 50px solid transparent;
+
+            border-top: 100px solid #de34f7;
+
+            margin: 30px 0 0 -50px;
+
+        }
+
+
+        .rhombus {
+            display: inline-block;
+        }
+        .rhombus> *{
+            width: 5px;
+            height: 5px;
+            background: black;
+        }
+        .rhombuone {
+            transform: rotateZ(39deg)skew(-16deg, 2deg);
+            margin: 103px 46px -13px 41px;
+            
+        }
+        .rhombutwo {
+            transform: rotateZ(39deg)skew(-16deg, 2deg);
+            margin: 8px 28px -100px 51px;
+            
+        }
+        .rhombuthree {
+            transform: rotateZ(128deg)skew(-16deg, 2deg);
+            margin: 90px 5px -8px 46px;
+            
+        }
+        .rhombufour {
+            transform: rotateZ(-50deg)skew(-16deg, 2deg);
+            margin: 14px 36px -4px 46px;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- <div id="star_six_points">
+    </div> -->
+    <div>
+        <div class="rhombus">
+            <p class="rhombuone"></p>
+            <p class="rhombutwo"></p>
+            <p class="rhombuthree"></p>
+            <p class="rhombufour"></p>
+        </div>
+        <span>流通事业部09年年度营销会议胜利召开</span>
+    </div>
+    <div>
+        <div class="rhombus">
+            <p class="rhombuone"></p>
+            <p class="rhombutwo"></p>
+            <p class="rhombuthree"></p>
+            <p class="rhombufour"></p>
+        </div>
+        <span>流通事业部09年年度营销会议胜利召开</span>
+    </div>
+    <div>
+        <div class="rhombus">
+            <p class="rhombuone"></p>
+            <p class="rhombutwo"></p>
+            <p class="rhombuthree"></p>
+            <p class="rhombufour"></p>
+        </div>
+        <span>流通事业部09年年度营销会议胜利召开</span>
+    </div>
+
+</body>
+
+</html>

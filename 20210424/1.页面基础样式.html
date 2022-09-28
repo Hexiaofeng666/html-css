@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        body{
+            height: 100%;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 让div居中 */
+            /* 针对块标签居中（前提：块标签的父容器要有多余空间可以移动） */
+            margin: auto;
+            /* 外边距 调整标签/或者移动标签 */
+            /* 同时设置标签四个方向的间距 */
+            /* margin: 20px; */
+            margin-top: 30px;
+            /* 内边距，内部填充，会改变元素的整体大小，但是内容显示区域不变 */
+            padding: 20px;
+
+            /* padding-top: 0; */
+
+
+            /* 边框 */
+            border-width: 3px;
+            border-color: blue;
+            /* solid 实线 dashed 虚线 */
+            border-style: solid;
+            /* border-bottom: 3px blue solid; */
+
+        }
+        div{
+            color: brown;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: '宋体';
+            /* 移动标签内的内容/具有行标签特点的标签 */
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div>内容</div>
+    <div>
+        <span>内容二</span>
+    </div>
+</body>
+</html>

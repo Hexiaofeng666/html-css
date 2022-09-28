@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div{
+            width: 1000px;
+            height: 500px;
+            /* margin: auto; */
+            background-image: url(./imgs/caodi.png);
+            background-size: contain;
+        }
+        img{
+            display: inline-block;
+            position: absolute;
+            animation: move 3s linear infinite;
+        }
+        @keyframes move{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        img:nth-of-type(1){
+            top: 120px;
+            left: 198px;
+            width: 200px;
+        }
+        img:nth-of-type(2){
+            top: 342px;
+            left: 497px;
+            width: 54px;
+        }
+        img:nth-of-type(3){
+            top: 245px;
+            left: 637px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./imgs/fengche.png" alt="">
+        <img src="./imgs/fengche.png" alt="">
+        <img src="./imgs/fengche.png" alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        div{
+            display: inline-block;
+            border: 3px solid red;
+            /* padding: 0; */
+            font-size: 0;
+        }
+        img{
+            /* margin: 0; */
+            /* display: block; 适用于只有一张图片 */
+            float: left;
+        }
+        .filter{
+            /* blur 模糊程度  值越大，越模糊 */
+            /* filter: blur(10px); */
+
+            /* 设置灰度 越接近100%，颜色越接近黑白色 */
+            /* filter: grayscale(10%); */
+
+            /* 褐色，值越大，越接近褐色 */
+            /* filter: sepia(80%); */
+
+            /* 饱和度度 默认值为1 值越大，颜色的饱和度越大 */
+            /* filter: saturate(1); */
+
+            /* 反色，取值范围只有0或者1  默认为： 0  */
+            /* filter: invert(1); */
+
+            /* 亮度(曝光度) */
+            /* filter: brightness(1); */
+
+
+            /* 颜色的对比度，值越大，亮的地方越亮，暗的地方越暗  默认为1 */
+            /* filter: contrast(5); */
+
+
+            filter: brightness(2) invert(1);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img.jpg" alt="">
+        <img src="img.jpg" alt="" class="filter">
+    </div>
+</body>
+</html>

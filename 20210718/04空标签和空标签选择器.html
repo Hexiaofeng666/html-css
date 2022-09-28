@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* :empty空标签选择器 */
+        /* 空标签选择器只能选中没有任何内容的标签，有空格也不行 */
+        span:empty::before{
+            content: '这个是空标签的前缀';
+        }
+    </style>
+</head>
+<body>
+    <span></span>
+</body>
+</html>

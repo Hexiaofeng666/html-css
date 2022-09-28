@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table {
+            margin: 50px auto;
+            /* 设置相邻单元格的边框距离为 0 */
+            border-spacing: 0;
+            /* 设置表格边框合并为单一的边框，去掉重复的边框 */
+            border-collapse: collapse;
+        }
+        td,th,table {
+            border: 1px solid red;
+            text-align: center;
+        }
+        td {
+            height: 30px;
+        }
+        th {
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- table 定义的是表格 -->
+    <table>
+        <!-- caption 定义的是表格中的标题 -->
+        <caption>课程表</caption>
+        <!-- thead 定义的是表格中的头部 -->
+        <thead>
+            <!-- tr 是定义表格中的表头 -->
+            <tr>
+                <!-- th 定义我们表格中的表头单元格用的 -->
+                <th>\</th>
+                <th>周一</th>
+                <th>周二</th>
+                <th>周三</th>
+                <th>周四</th>
+                <th>周五</th>
+                <th>周六</th>
+                <th>周天</th>
+            </tr>
+        </thead>
+        <!-- tbody 定义的是表格中的主体内容 -->
+        <tbody>
+            <tr>
+                <td>上午</td>
+                <td rowspan="2" colspan="2">自习</td>
+                <!-- <td>自习</td> -->
+                <td>体育</td>
+                <td>睡觉</td>
+                <!-- rowspan 合并行 -->
+                <td rowspan="2">数学</td>
+                <!-- colspan 合并列 -->
+                <td colspan="2">语文</td>
+                <!-- <td>语文</td> -->
+            </tr>
+            <tr>
+                <td>下午</td>
+                <!-- <td>自习</td> -->
+                <!-- <td>自习</td> -->
+                <td>音乐</td>
+                <td>聊天</td>
+                <!-- <td>数学</td> -->
+                <td rowspan="2" colspan="2">自习</td>
+                <!-- <td>自习</td> -->
+            </tr>
+            <tr>
+                <td>晚上</td>
+                <td colspan="3">HTML</td>
+                <!-- <td>HTML</td>
+                <td>HTML</td> -->
+                <td>唱歌</td>
+                <td>烧烤</td>
+                <!-- <td>自习</td>
+                <td>自习</td> -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

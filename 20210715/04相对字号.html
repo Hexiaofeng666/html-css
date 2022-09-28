@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            /* 默认字号是16px */
+            font-size: 20px;
+        }
+    </style>
+    <!-- 
+        em:以父级标签的字号作为计算标准，如果父级元素也是 em字号，则可以
+        逐级相乘，直到找到有明确字号的标签，然后计算
+        0.5* 0.5* 2 * 20 = 10px
+        rem:以文档标签( html)进行计算
+        rem不会受到上级标签的影响，因此计算起来更加方便
+        自身的大小* html 的字体大小=最终值
+        0.5rem * 20px =10px
+
+     -->
+</head>
+<body>
+    <div>
+        <h2>
+            这个是标题
+        </h2>
+        <p>这个是第1个p标签</p>
+        <p>这个是第2个p标签</p>
+        <p style="font-size: 1em;">这个是第3个p标签</p>
+        <p style="font-size: 1.2rem;">这个是第4个p标签</p>
+        <p style="font-size: 1.5rem;">这个是第5个p标签</p>
+        <p style="font-size: 2em;">
+            这个是第6个p标签
+            <span style="font-size: 0.5em;">
+                内部文本
+                <span style="font-size: 0.5em;">
+                    内部的内部文本
+                </span>
+            </span>
+        </p>
+    </div>
+</body>
+</html>

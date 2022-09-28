@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .divone{
+            height: 200px;
+        }
+        .divone p{
+            text-align: center;
+            color: cornflowerblue;
+        }
+        .textone{
+            font-size: 35px;
+        }
+        .texttwo{
+            font-size: 20px;
+        }
+
+        /* 图片 */
+        .divtwo{
+            position: absolute;
+            width: 100%;
+            /* height: 400px; */
+        }
+        .divtwo div{
+            display: inline-block;
+            /* margin-left: calc((100% - 4*256px)/5); */
+            /* position: relative; */
+        }
+        .text{
+            position:absolute;
+            width: 256px;
+            height: 200px;
+            top: 266px;
+            color: white;
+            text-align: center;
+            /* margin-left: 20px; */
+            /* transform: scale(0,0); */
+            transition: all .5s;
+        }
+        .text p{
+            transform: scale(0,0);
+        }
+        .divtwo div:hover .text{
+            top: 100px;
+            background-color: rgba(71, 69, 69, 0.6);
+        }
+        .divtwo div:hover .text p{
+            transform: scale(1,1);
+        }
+        /* 给divtwo的一级子元素div设置间距 */
+        .divtwo>div{
+            margin-left: calc((100% - 4*256px)/5);
+        }
+    </style>
+</head>
+<body>
+    <div class="divone">
+        <p class="textone">当季新品</p>
+        <p class="texttwo">IN THE NEW PRODUCT</p>
+        <p class="textthree">———— . ————</p>
+    </div>
+    <div class="divtwo">
+        <div class="imgone">
+            <img src="./img1.png" alt="">
+            <div class="text">
+                <h3>红丝绒拿铁</h3>
+                <p>红丝绒调配在香浓的牛奶与咖啡里，营造出了深红色的渐进色泽，美轮美奂。如何…</p>
+            </div>
+        </div>
+        <div class="imgtwo"> 
+            <img src="./img2.png" alt="">
+            <div class="text">
+                <h3>圣诞魔卡帽</h3>
+                <p>都知道爱情和巧克力的奇妙情缘来源于巧克力的甜刺激大脑多巴胺激素的分泌，让…</p>
+            </div>
+        </div>
+        <div class="imgthree">
+            <img src="./img3.png" alt="" title="这是一张美食">
+            <div class="text">
+                <h3>红丝绒蛋糕</h3>
+                <p>都知道爱情和巧克力的奇妙情缘来源于巧克力的甜刺激大脑多巴胺激素的分泌，让…</p>
+            </div>
+        </div>
+        <div class="imgfour">
+            <img src="./img3.png" alt="这是一张图片">
+            <div class="text">
+                <h3>印尼桑巴鸡肉培根炒饭&虾仁培根炒饭</h3>
+                <p>虾仁配培根，这个跨界的搭配，一定可以给你一种新的体验和味道，如果我们能从…</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

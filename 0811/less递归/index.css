@@ -1,0 +1,25 @@
+div {
+  height: 60px;
+  background-color: orange;
+}
+.size1 {
+  width: 14.28571429%;
+}
+.size2 {
+  width: 28.57142857%;
+}
+.size3 {
+  width: 42.85714286%;
+}
+.size4 {
+  width: 57.14285714%;
+}
+.size5 {
+  width: 71.42857143%;
+}
+.size6 {
+  width: 85.71428571%;
+}
+.size7 {
+  width: 100%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+        }
+        div{
+            height: 100px;
+            border: 1px solid red;
+            /* 空间分配的第一种方案 */
+            /* 给初始值，当页面变小的时候属性值会同比缩小 */
+            flex-basis: 300px;
+        }
+        div:nth-of-type(1){
+            /* flex-basis: 150px; */
+            /* flex-shrink 当屏幕缩小后，如果第一个为1其他为0
+            那么空间不足时，其他不会缩小，只有1被缩小
+            值越大 被压得越严重，如果为0则不会被缩小
+            flex-shrink: 2*/
+
+            /* 
+            flex-grow,该属性定义项目的比例，默认为0，
+            如果容器有多余的空，为0的不会发生改变，
+            如果属性都为1其中一个为2则为2的占比会比其他的多一倍，
+            相当于一块蛋糕，被分为5分第一个占了2份
+            */
+            flex-shrink: 1;
+        }
+        div:nth-of-type(2){
+            /* flex-basis: 200px; */
+            flex-shrink: 1;
+        }
+        div:nth-of-type(3){
+            /* flex-basis: 300px; */
+            flex-shrink: 1;
+        }
+        div:nth-of-type(4){
+            /* flex-basis: 400px; */
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+
+        }
+        .title{
+            text-align: center;
+        }
+        /* title的第一个p标签 */
+        .title p:nth-child(1){
+            color: rgb(59, 184,171);
+            font-size: 24px;
+            /* 字间距 */
+            letter-spacing: 5px;
+        }
+        .title p:nth-child(2){
+            color: powderblue;
+            margin-top: 10px;
+            font-size: 23px;
+            font-family: monospace;
+        }
+        .title span{
+            color: rgb(59, 184, 171);
+        }
+        .title span::before,.title span::after{
+            content: '';
+            display: inline-block;
+            width: 50px;
+            height: 2px;
+            background-color: rgb(59, 184, 171);
+        }
+        .title span::before{
+            margin-right: 5px;
+        }
+        .title span::after{
+            margin-left: 5px;
+        }
+        ul{
+            /* 去除原本的小圆点 */
+            list-style-type: none;
+            padding: 0;
+            /* 弹性布局：弹性布局下的直接子元素都会默认排成一行 */
+            display: flex;
+            /* 可以让元素弹开 */
+            /* between两边弹开 */
+            justify-content: space-between;
+            width: 80%;
+            /* 定宽居中 */
+            margin: auto;
+            margin-top: 25px;
+        }
+        li{
+            width: 23%;
+            position: relative;
+            /* 将超出li标签的内容进行剪切 */
+            overflow: hidden;
+            /* background-color: red; */
+        }
+        li img{
+            width: 100%;
+            height: 100%;
+        }
+        li div{
+            position: absolute;
+            color: white;
+            bottom: -73px;
+            text-align: center;
+            transition: all 0.5s;
+        }
+        li div p:nth-child(1){
+            font-size: 17px;
+        }
+        li div p:nth-child(2){
+            font-size: 14px;
+            /* 注意两个margin的覆盖问题 */
+            margin: auto;
+            margin-top: 14px;
+            width: 75%;
+        }
+        li::before{
+            content: '';
+            display: block;
+            width: 85%;
+            height: 100px;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            left: 7.5%;
+            top: 50%;
+            /* translateY    y轴方向的位移,以标签的中心点开始移动 */
+            transform: translateY(-75px);
+            /* 隐藏 */
+            opacity: 0;
+            transition: all 0.5s;
+        }
+        li:hover::before{
+            opacity: 1;
+        }
+        li:hover div{
+            bottom: 120px;
+        }
+        li:last-child:hover div{
+            bottom: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="title">
+        <p>当季新品</p>
+        <p>IN THE NEW PRODUCT</p>
+        <span>.</span>
+    </div>
+    <!-- ul>li*4>img[src='imgs/$.png']+div>p*2 +回车键-->
+    <ul>
+        <li>
+            <img src="imgs/img1.png" alt="">
+            <div>
+                <p>红丝绒拿铁</p>
+                <p>红丝绒调配在香浓的牛奶与咖啡里，营造出了深红色的渐进色泽，美轮美奂。如何…</p>
+            </div>
+        </li>
+        <li>
+            <img src="imgs/img2.png" alt="">
+            <div>
+                <p>圣诞魔卡帽</p>
+                <p>都知道爱情和巧克力的奇妙情缘来源于巧克力的甜刺激大脑多巴胺激素的分泌，让…</p>
+            </div>
+        </li>
+        <li>
+            <img src="imgs/img3.png" alt="">
+            <div>
+                <p>红丝绒蛋糕</p>
+                <p>都知道爱情和巧克力的奇妙情缘来源于巧克力的甜刺激大脑多巴胺激素的分泌，让…</p>
+            </div>
+        </li>
+        <li>
+            <img src="imgs/img4.png" alt="">
+            <div>
+                <p>印尼桑巴鸡肉培根炒饭&虾仁培根炒饭</p>
+                <p>虾仁配培根，这个跨界的搭配，一定可以给你一种新的体验和味道，如果我们能从…</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

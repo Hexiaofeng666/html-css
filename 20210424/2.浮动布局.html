@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        span{
+            background-color: burlywood;
+            color: white;
+            font-size: 19px;
+            padding: 3px;
+            padding-right: 8px;
+            padding-left: 8px;
+            display: block;
+
+            /* 浮动:
+            1.可以让块级元素从一列变成一行
+            2.可以使标签浮动到左边或右边 */
+            /* 浮动的副作用：会导致浮动元素的直接父标签的高度消失 */
+            /* 消除副作用：使用浮动后清除副作用 */
+            float: left;
+
+        }
+        .fl{
+            float: right;
+        }
+        div{
+            /* float: right ;*/
+            background-color: yellow ;
+
+            /* height: 200px; */
+            /*找回父类高度  */
+            /* overflow: hidden; */
+        }
+        div::after{
+            content:'';
+            clear: left;
+        }
+        section{
+            clear:left
+        }
+    </style>
+</head>
+<body>
+    <div class="fl">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <section></section>
+    </div>
+</body>
+</html>

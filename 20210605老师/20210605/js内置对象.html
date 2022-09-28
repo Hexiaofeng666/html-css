@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <p>内容</p>
+  <script>
+     var str='这是一个字符串：'
+    //  对字符串进行部分内容的获取
+    console.log(str.charAt(0));
+    console.log(str.charAt(5));
+
+    console.log(str.substr(2,2));
+    //  不会将结束位置索引值的内容包裹进去
+    console.log(str.substring(2,4));
+    // 对于截取出部分内容的时候，当只写一个值的时候，那么就是从开始位置到字符串的结束位置都进行截取
+    console.log(str.substr(2));
+
+    // 根据内容获取索引值
+    console.log(str.indexOf('串'))
+
+    var text = '今天下了好大的雨 '
+    // 拼接
+     var newstr = str + text
+    console.log(newstr);
+
+    // 修改  replace
+    // console.log(newstr.replace('下了好大的雨', '会是一个好天气'));
+    // 通过"字符串的方法"获取要被替换的内容
+ 
+    console.log(newstr.replace(newstr.substring(10),'会是一个好天气'));
+    
+    console.clear()
+    // Math  所有有关数学相关的操作
+    // 随机数  0<= n <1
+    var r = Math.random() * 100
+    console.log(r);
+
+    // 取整
+    // 四舍五入
+    console.log(Math.round(r));
+    // 向下取整(只取整数部位)
+    console.log(Math.floor(r));
+    // 向上取整(只要小数部位有内容，就往整数部位进一位)
+    console.log(Math.ceil(r));
+
+   
+
+  </script>
+</body>
+</html>

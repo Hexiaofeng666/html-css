@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* body 默认会自带8个像素的外边距 */
+            margin: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+
+            /*设置动画名称*/
+            /*动画名称是可以随便起的，但是尽量要有含义*/
+            animation-name: move;
+            /*设置动画执行一次所需要的时间*/
+            animation-duration: 5s;
+            /* 设置速率 */
+            animation-timing-function: ease-in;
+
+            /* 设置动画执行的次数，infinite无限次的意思 */
+            animation-iteration-count: 5;
+        }
+        /* @keyframes定义动画的关键字*/
+        /* move动画的名称*/
+
+        @keyframes move {
+            /* 动画开始前的定位   from可以用100%来代替 */
+            from {
+                left: 0;
+                top: 0;
+            }
+            25%{
+                left: calc(100% - 200px);
+                top: 0;
+                background-color: royalblue;
+            }
+            50%{
+                left: calc(100% - 200px);
+                top: calc(100% - 200px);
+            }
+            75%{
+                left: 0;
+                top: calc(100% - 200px);
+            }
+
+            /*动画结束后的样式 to 可以用100%代替*/
+            to {
+                /* 
+                    设置定位的时候注意：
+                    如果该标签有设置了left就千万不要再设置right了
+                    如果该标签有设置了top就千万不要再设置bottom了
+                */
+                left: 0;
+                top: 0;
+                /* left: calc(100% - 200px);
+                top: 0; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

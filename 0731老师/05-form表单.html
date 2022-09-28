@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tx-form {
+            width: 400px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- form 标签是用来将用户输入的数据提交到服务器中去 -->
+    <!-- action="#" 将数据上传到哪里去 -->
+    <!-- method="GET" 设置请求方式 -->
+    <form action="#" method="GET">
+        <!-- 文本输入框 -->
+        <input type="text" placeholder="请输入姓名">
+        <!-- 颜色选择 -->
+        <input type="color" name="" id="">
+        <!-- 日期选择 -->
+        <input type="date" name="" id="">
+        <!-- 有邮箱格式验证的输入框 -->
+        <input type="email" name="" id="">
+        <!-- 文件选择 -->
+        <input type="file" name="" id="">
+        <!-- 数字输入框 -->
+        <input type="number" name="" id="">
+        <!-- 控制选择器 -->
+        <input type="range" name="" id="">
+        <!-- 搜索框，后面会自带一个删除的 x -->
+        <input type="search" name="" id="">
+        <!-- 打电话 -->
+        <a href="tel:15060002022">给自己打电话</a>
+
+    </form>
+    
+    <form class="tx-form" action="#">
+        <!-- 
+            label: 标签
+            for： 说明这个标签是为谁添加说明的，说明给 id 为 user 的 input 
+            添加说明用的
+         -->
+        <label for="user">用户名：</label>
+        <!-- value 设置默认输入框中的值 -->
+        <input type="text" placeholder="请输入用户名" value="3337409100" id="user">
+        <br><br>
+        <label for="psw">请输入密码：</label>
+        <!-- 密码输入框 -->
+        <!-- required 配置必填项 -->
+        <input type="password" required placeholder="请输入密码">
+        <br><br>
+        <!-- 单选 -->
+         <label for="">男</label>
+         <!-- checked 设置默认选中项 -->
+         <input type="radio" name="sex" checked value="male" id="">
+         <label for="">女</label>
+         <input type="radio" name="sex" value="famale" id="">
+         <br><br>
+         <!-- 
+             设置多选框
+          -->
+          请选择兴趣爱好：
+          <br>
+          <input type="checkbox" name="lq"> 篮球 <br>
+          <input type="checkbox" name="ymq"> 羽毛球 <br>
+          <input type="checkbox" name="zq"> 足球 <br>
+          <input type="checkbox" name="ppq"> 乒乓球 <br>
+          <input type="checkbox" name="xx"> 学习 <br>
+          <input type="checkbox" name="pq"> 排球 <br>
+          <input type="checkbox" name="cg"> 唱歌 <br>
+
+          <!-- 下拉列表 -->
+          出生年份：
+          <select name="" id="">
+              <option value="">1994</option>
+              <option value="">1995</option>
+              <option value="">1996</option>
+              <option value="">1997</option>
+              <option value="">1998</option>
+              <option value="">1999</option>
+              <option value="">2000</option>
+              <option value="">2001</option>
+          </select>
+          年
+          <select name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+              
+          </select>
+          月
+          <br><br>
+          动画选择：
+          <select name="" id="">
+              <optgroup label="进入方式">
+                <option value="">从左进入</option>
+                <option value="">从右进入</option>
+                <option value="">从上进入</option>
+                <option value="">从下进入</option>
+              </optgroup>
+              <optgroup label="退出方式">
+                <option value="">从左退出</option>
+                <option value="">从右退出</option>
+                <option value="">从上退出</option>
+                <option value="">从下退出</option>
+              </optgroup>
+          </select>
+
+          <br><br>
+          个人介绍：
+          <br>
+          <!-- 
+              textarea 输入一块内容
+              cols 设置行宽度
+              rows 设置高度
+           -->
+          <textarea name="" id="" cols="30" rows="10" placeholder="请输入你的内容"></textarea>
+           <br><br>
+          <!-- submit 提交表单中数据用的 -->
+          <input type="submit" value="提交表单">
+           <!-- 清空表单中所有数据 -->
+           <input type="reset" value="重置">
+
+           <button>普通按钮</button>
+           <input type="button" value="普通按钮">
+
+    </form>
+
+</body>
+</html>

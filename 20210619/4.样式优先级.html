@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 行内样式>内联样式 -->
+    <!-- 由于代码是从上到下进行编译渲染的，当等级一致，针对同一个标签设置样式的时候，
+    越下面的样式会将上面的样式进行覆盖 -->
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* 标签选择器 */
+        /* 100 */
+        #two{
+            color: tomato;
+        }
+        /* 1+1+10=12 */
+        section p.one{
+            color: blue;
+        }
+        /* 11 */
+        p:nth-child(1){
+            color: violet;
+        }
+        /* 10 */
+        .one{
+            color: yellow;
+        }
+        /* 1+1=2 */
+        section p{
+            color: blue;
+        }
+        /* 1 */
+        p{
+            /* !important将当前这个样式的优先级提到最高，高于id,甚至高于行内样式 */
+            color: red !important;
+        }
+
+        
+
+
+        
+    </style>
+    <!-- stylesheet样式工具表 -->
+    <!-- id选择器 > 个数选择器 > class选择器 > 后代选择器 > 标签选择器 -->
+    <!-- 将优先级换算为权重值计算（针对标签设置的样式，而不是用于所有的样式权重值进行计算） -->
+    <!-- 注意:样式是继承过来的时候，不管继承样式的权重值有多高，都不如直接针对标签上设置的样式 -->
+    <!-- id == 100   class == 10   标签 ==1  个数 ==11   -->
+    <!-- 涉及继承的，权重值再大也大不过本身 -->
+</head>
+<body>
+    
+    <!-- <p style="color: orange;">今天天气真不错！！！</p> -->
+
+    <section>
+        <p class="one" id="two" style="color: green ;">天气真好</p>
+    </section>
+    
+</body>
+</html>

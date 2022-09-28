@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:nth-child(1){
+            color: red;
+        }
+        div p:nth-of-type(2){
+            color: yellow;
+            font-size: 40px;
+        }
+        
+        body>section>:nth-child(2){
+            color: green;
+        }
+        /* 五 */
+        section div div p{
+            /* color: red; */
+            font-size: 20px;
+        }
+        /* 六 */
+         section section>p{
+            color: blue;
+            font-size: 30px;
+        }
+        /* 第四个 */
+        body>:nth-child(2){
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <p>这是第一个内容 colr:red</p>
+            <p>这是第二个内容 colr:yellow font-size：40px</p>
+        </div>
+        <p>这是第三个内容 colr:green</p>
+        <section>
+            <div>
+                <div>
+                    <p>这是第五个内容 colr:red font-size：20px</p>
+                </div>
+            </div>
+            <p>这是第六个内容 colr:blue font-size：30px</p>
+        </section>
+        <p>222</p>
+    </section>
+    <p>这是第四个内容 colr:aqua</p>
+
+</body>
+
+</html>

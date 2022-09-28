@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            background-color: blue;
+            color: white;
+            font-size: 40px;
+            padding: 5px 10px;
+        }
+        .two{
+            /* 绝对定位：参照上一级有设置定位的父标签为参照物，
+            移动的范围是参照物的大小 */
+            /* 元素空间释放 */
+            position: absolute;
+            left: 10px;
+        }
+        div{
+            width: 400px;
+            height: 400px;
+            border: 2px solid red;
+            margin: 20px auto;
+        }
+        span{
+            position: absolute;
+        }
+        .one{
+            /* 显示的层级等级，值越大，越显示在页面的前面 */
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="one">1</span>
+        <span class="two">2</span>
+        <span class="three">3</span>
+    </div>
+</body>
+</html>

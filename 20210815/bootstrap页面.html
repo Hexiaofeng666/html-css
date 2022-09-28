@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+  
+  <script src="./bootstrap-3.3.7-dist/js/jquery-3.1.1.js"></script>
+  <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <style>
+    nav{
+      margin: 0 !important;
+    }
+    .user{
+      font-size: 20px;
+      color: gray;
+      margin-top: 10px;
+    }
+    .title{
+      font-size: 21px;
+      background-color: #bbb7b7;
+      line-height: 55px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">爱米妮儿童摄影</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">首页</a></li>
+          <li><a href="#">客户</a></li>
+          <li><a href="#">宝贝</a></li>
+          <li><a href="#">孕妈咪</a></li>
+          <li><a href="#">会员卡</a></li>
+          <li><a href="#">订购</a></li>
+          <li><a href="#">预约</a></li>
+          <li><a href="#">产品</a></li>
+        </ul>
+        <span class='glyphicon glyphicon-user pull-right user'></span>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="title">
+    <div class="container ">
+      客户查询及管理
+    </div>
+  </div>
+   
+  <main>
+    <div class="container">
+      <div style='margin: 20px 0;'>
+        <button class="btn btn-success">添加客户</button>
+        <button class='btn btn-warning' data-toggle='modal' data-target='#myModal'>
+          <span class='glyphicon glyphicon-search'></span>
+          搜索
+        </button>
+      </div>
+
+     <table  class="text-center table table-bordered">
+      <tbody>
+        <tr >
+          <td>添加时间</td>
+          <td>姓名</td>
+          <td>性别</td>
+          <td>QQ</td>
+          <td>手机</td>
+          <td>客户经理</td>
+          <td>详情</td>
+        </tr>
+        <tr >
+          <td>2016-2-15</td>
+          <td>张三</td>
+          <td>男</td>
+          <td>154564892</td>
+          <td>15646522544</td>
+          <td>小李</td>
+          <td><span class="glyphicon glyphicon-edit"></span> </td>
+        </tr>
+        <tr >
+          <td>2016-4-12</td>
+          <td>李思思</td>
+          <td>女</td>
+          <td>215648456</td>
+          <td>18955456488</td>
+          <td>小李</td>
+          <td><span class="glyphicon glyphicon-edit"></span></td>
+        </tr>
+        <tr>
+          <td>2015-6-18</td>
+          <td>王敏</td>
+          <td>女</td>
+          <td>2354548125</td>
+          <td>18548455478</td>
+          <td>小明</td>
+          <td><span class="glyphicon glyphicon-edit"></span></td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+  </main>
+
+  <!-- 模态框（Modal） -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+        </div>
+        <div class="modal-body">在这里添加一些文本</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-primary">提交更改</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+  </div>
+
+ 
+  
+</body>
+</html>

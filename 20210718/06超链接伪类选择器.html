@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        从未被点击过的a标签会是蓝色的字体
+        被点击过的a标签会是紫色的字体
+        点击过程中鼠标没有松开的情况下会是红颜色的字体
+         */
+
+         /* 超链接没有被访问过的样式，默认是蓝色 */
+         a:link{
+             background-color: pink;
+             color: green;
+             }
+             /* 被访问过的样式，默认是紫色 */
+             a:visited{
+                 color: pink;
+                 background-color: green;
+             }
+             /* 监听鼠标移动到该标签上时的样式 */
+             a:hover{
+                 background-color: blue;
+                 color: white;
+             }
+
+             /* 
+                元素被用户激活(鼠标点击与释放之间的时间事件)
+                点击时默认也是红色的字体
+              */
+             a:active{
+                 background-color: red;
+                 color: yellow;
+             }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">百度一下，你就凉快了</a>
+</body>
+</html>

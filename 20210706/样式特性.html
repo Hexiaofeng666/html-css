@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            /* 当容器中的第一级第一个子元素是块元素的时候，子元素的margin-top会泄露出来
+            造成父容器达到共用，解决办法：给父容器加上border，padding，浮动布局... */
+            border: 3px solid red;
+            margin: 0px auto;
+        }
+        span {
+            background-color: lightblue;
+            color: white;
+            /* padding-top/bottom针对行元素会覆盖在父容器上面*/
+            padding: 10px 15px;
+            margin-left: 20px;
+            /* margin-top/bottom针对行元素无效 */
+            /* margin-top: 20px; */
+            /* display: inline-block; */
+        }
+        section{
+            width: 60px;
+            height: 60px;
+            background-color: turquoise;
+            /* 块级元素之间的纵向间距由最大值决定 */
+           margin-top: 20px; 
+            /* margin-bottom: 30px;  */
+            /* display: inline-block; */
+            /* 块级元素之间的纵向间距由两个值的叠加决定 */
+            /* margin-left: 10px;
+            margin-right: 20px; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <p>这是p内容</p>
+    </div>
+    <span>这是span内容</span> -->
+    <div>
+        <!-- <p>sss</p>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <p>666</p> -->
+
+
+
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+    </div>
+
+</body>
+
+</html>

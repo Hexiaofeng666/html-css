@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 144px;
+            height: 144px;
+            background-image: url(./icons.jpg);
+        }
+        .one{
+            background-position-y: calc(-144px * 5);
+        }
+        .two{
+            background-position: calc(-144px * 3) calc(-144px * 3);
+        }
+        section{
+            width: 50px;
+            height: 50px;
+            background-image: url(./icons.jpg);
+            background-size: 700%;
+        }
+        .three{
+            background-position-y: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"> </div>
+    <div class="two"> </div>
+    <section class="three"></section>
+</body>
+</html>

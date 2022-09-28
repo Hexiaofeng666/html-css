@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        div{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: red;
+
+            /* 设置子元素 */
+            align-self: center;
+        }
+        .s1{
+            justify-content: center;
+            align-items: center;
+        }
+        .s2{
+            justify-content: center;
+            /* align-items: center; */
+            align-items: flex-end;
+        }
+        .s2 div{
+            margin: 14px;
+        }
+        .s2 div:nth-of-type(1){
+            margin-top: 67px;
+            /* margin-left: 20px; */
+        }
+        .s2 div:nth-of-type(2){
+            margin-top: -33px;
+        }
+
+
+        .s3 div:nth-of-type(1){
+            margin: 10px;
+            margin-top: 70px;
+        }
+        .s3 div:nth-of-type(3){
+            margin: 10px;
+            margin-top: -60px;
+        }
+        .s4{
+            flex-wrap: wrap;           
+        }
+        .s4 div{
+            margin: 15px;
+        }
+        .s5{
+            flex-wrap: wrap;
+        }
+        .s5 div{
+            margin: 15px;
+        }
+        .s5 div:nth-of-type(5){
+            margin-top: -85px;
+        }
+        .s6{
+            /* align-items: flex-start; */
+            flex-wrap: wrap;
+        }
+        .s6 div{
+            margin: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <section class="s1"> 
+        <div>
+
+        </div>
+    </section>
+    <section class="s2">
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </section>
+    <section class="s3">
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section class="s4">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section class="s5">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section class="s6">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 450px;
+            border: 1px solid blue;
+            display: flex;
+
+            /* 设置水平方向居中 */
+            /* justify-content: center; */
+
+            /* 设置子项开始位置 */
+            /* justify-content: flex-start; */
+            /* 设置子项结束位置 */
+            /* justify-content: flex-end; */
+
+            /*平均分开，第一个跟最后一个不会贴着边显示*/
+            /*justify-content: space-around;*/
+            /*平均分开，第一个跟最后一个会贴着边显示*/
+            /*justify-content: space-between;*/
+            /*完全均分*/
+
+            justify-content: space-around;
+            /* 
+                flex-start  开始位置
+                flex-end    结束位置
+                center      中间位置
+                baseline    基线
+             */
+            align-items: center;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>B</div>
+    <div>C</div>
+    <div>D</div>
+</body>
+</html>

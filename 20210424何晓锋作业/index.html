@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .index{
+            background-color: orange;
+            color: white;
+            padding: 5px;
+            border-radius: 30%;
+            display: inline-block;
+        }
+        span{
+            font-family: "宋体";
+            font-weight: bold;
+            margin-right: 30px;
+            /* display: inline-block; */
+        }
+        .word{
+            /* float: left; */
+            text-align: center;
+            /* margin-top: 20px; */
+            display: inline-block;
+            /* margin-bottom: 30px; */
+        }
+        .no1{
+            margin-left: 300px;
+            width: 70%;
+        }
+        .text{
+            width: 100px;
+            text-align: center;
+            border-width: 2px;
+            border-color: red;
+            border-style: solid;
+            border-left: none;
+            border-right: none;
+        }
+        .no2{
+            width: 120px;
+            text-align: center;
+            margin: auto;
+        }
+        .no3 span{
+            /* text-align: center; */
+            color: salmon;
+        }
+        .no3{
+            margin: auto;
+            text-align: center;
+        }
+        .no4{
+            margin: auto;
+            text-align: center;
+            height: 400px;
+            width: 700px;
+        }
+        .no5{
+            /* 让每组图片向左浮动*/
+            float: left;
+            /* text-align: center; */
+            /* margin: auto; */
+        }
+        .no5 img{
+            /* 设置为块排让图片分行排列 */
+            display: block;
+            margin: 1px;
+        }
+        .picture{
+            width: 100%;
+        }
+        /* 并集选择器 */
+        .no1 img, .no1 .word{
+            float: left;
+        }
+        .word span{
+            margin-top: 60px;
+             }
+    </style>
+</head>
+<body>
+    <div class="no1">
+        <img src="图片1.png" alt="">
+        <div class="word">
+            <span class="index">首页</span>
+            <span>企业简介</span>
+            <span>产品展示</span>
+            <span>店铺效果</span>
+            <span>代理相关</span>
+            <span>联系我们</span>
+            <span>人才招募</span>
+            <span>留言咨询</span>
+        </div>
+    </div>
+    <img class="picture" src="图片3.png" alt="">
+    <div class="no2">
+        <p class="text">推荐甜品</p>
+    </div>
+    <div class="no3">
+        <span>热</span>
+        <span>销</span>
+        <span>推</span>
+        <span>荐</span>
+        &nbsp;&nbsp;&nbsp;
+        <span>较</span>
+        <span>新</span>
+        <span>推</span>
+        <span>荐</span>
+    </div>
+    <div class="no4">
+        <div class="no5">
+            <img src="图片4.png" alt="">
+            <img src="图片7.png" alt="">
+        </div>
+        <div class="no5">
+            <img src="图片5.png" alt="">
+            <img src="图片8.png" alt="">
+        </div>
+        <div class="no5">
+            <img src="图片6.png" alt="">
+            <img src="图片9.png" alt="">
+        </div>
+    </div>
+</body>
+</html>

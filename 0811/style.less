@@ -1,0 +1,84 @@
+// body{background-color: red;}
+
+// 1. 变量       @变量：变量值;
+// @color:#773f*2;
+@color:#773f*2;
+// body{
+//   background-color: @color;
+// }
+
+div{
+  width: 200px;
+  height: 200px;
+  background-color: @color;
+
+}
+p{
+  color: @color;
+  border: 1px solid @color;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+// 2. 函数（less封装的函数可以对传递的值进行操作返回结构，并运用在样式上）
+// 函数还有很多，属于less提供，可以到中文文档查看
+// https://less.bootcss.com/functions/#color-blending-functions-softlight
+// darken  调节颜色的暗度
+// lighten 调节颜色的亮度
+div{
+  background-color: lighten(@color,20%);
+}
+
+
+// 3.混合（提高样式共用）
+// 在less中，只要多个标签共用一个样式名，就可以达到共用条件，可以使用mixin
+// 不需要和css那样只有确认样式名和值都一样的情况下才能共用样式
+// 共有  border padding  color  border-radius
+.style(@c:red,@p:20px,@r:10px ,@b:pink){
+  color:@c;
+  border: 1px solid orange;
+  padding:@p;
+  border-radius: @r;
+}
+b{
+  .style()
+}
+span{
+  .style(blue)
+}
+section{
+  .style(yellow,30px);
+  // 4.嵌套
+  u{
+    color: black;
+  }
+  
+  // & 指的是当前这个标签
+  &:hover {
+    background-color: green;
+  }
+}
+
+// 5. 继承
+.font{
+  font-weight: bold;
+  // ......
+}
+// u{
+//   .font;  将font的样式copy到u标签中
+//   font-style: italic;
+// }
+
+// u标签先设置继承的样式，再设置自身的样式
+u:extend(.font){
+  font-style: italic;
+}
+
+
+
+
+
+
+
+

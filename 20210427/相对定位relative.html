@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            background-color: blue;
+            color: white;
+            font-size: 40px;
+            padding: 5px 10px;
+        }
+        .two{
+            /* margin-left: 10px; */
+            /* 相对定位：相对于本身原来的位置进行参考 */
+            /* 元素本身的空间会被保留住 */
+            position: relative;
+            top: -20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <span>1</span>
+    <span class="two">2</span>
+    <span>3</span>
+</body>
+</html>

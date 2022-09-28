@@ -1,0 +1,57 @@
+#superMary{
+    width: 170px;
+    height: 280px;
+    background-image: url("./marry.png");
+    background-size: contain;
+    position: relative;
+    left: 0;
+    animation-name: marry;
+    /* 持续时间 */
+    animation-duration: 5s;
+    /*线性的变化*/
+    animation-timing-function: linear;
+    /* 延迟几秒播放 */
+    animation-delay: 0s;
+    /* 循环次数 */
+    animation-iteration-count: infinite;
+    /* 动画方向（reverse反向) (alternate奇数正向播放 偶数倒叙播放) */
+    /* animation-direction: reverse; */
+    /* 最后停留的状态(forwork结束)(backwards开始)(both两者都可以) */
+    /* animation-fill-mode: forwards; */
+    /* animation: myBG 3s infinite; */
+    /* animation-iteration-count: infinite; */
+}
+body{
+    width: auto;
+    height: 500px;
+}
+/* div{
+    width: 300px;
+    height: 500px;
+} */
+@keyframes marry{
+    from{
+        left: 0;
+        top: 0;
+    }
+    25%{
+        left: 88%;
+        top: 0;
+    }
+    50%{
+        left: 88%;
+        top: 100%;
+     }
+
+    75%{
+        left: 0;
+        top: 100%;
+    } 
+    to{
+        left: 0px;
+        top: 0px;
+    }
+}
+#superMary:hover{
+   animation-play-state: paused;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择具有制定属性的元素 */
+        p[class]{
+            color: red;
+            
+        }
+        /* 选择具有指定属性值的元素，如果有多个属性则无法被选中 */
+        p[title='购物']{
+            text-decoration: underline;
+        }
+        /* 指定属性值开头的元素 */
+        p[title^='搜']{
+            text-decoration: line-through;
+        }
+        /* 选择指定属性值结尾的元素 */
+        p[name $= '微博']{
+            color: blue;
+        }
+        /* 选择包含指定属性值的元素 */
+        p[class *='j']{
+            color: pink;
+        }
+
+        /* 选择class中有j的标签，多个class以空格隔开的也可被选中 */
+
+        p[class ~='j']{
+            color: pink;
+        }
+        /* 指定属性值以a开头并且使用-分割的可以被选中
+        包含只有属性值a 也可以被选中 */
+        p[class |='a']{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- title标题，鼠标移到该标签上时给用户的提示内容 -->
+    <p id="baidu" title="搜索 购物 查询">百度</p>
+    <p title="淘宝">淘宝</p>
+    <p name='微博 新闻' title="搜索 游戏 购物 社交">腾讯</p>
+    <p name='新闻 微博' title="购物">新浪</p>
+    <p class="wangyi">网易</p>
+    <p class="gao j de map">高德</p>
+    <p class="j a d">京东</p>
+    <p class="a-he">河南</p>
+    <p class="a-fj">福建</p>
+    <p class="a">福州</p>
+</body>
+</html>

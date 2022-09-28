@@ -1,0 +1,16 @@
+div{
+    height: 40px;
+    background-color: orange;
+}
+
+// 递归 通过调用自己本身重负做一件事情，形成循环
+// less没有循环
+// when进行条件判断
+.width(@n,@i:1) when (@i<=@n){
+    // 条件符合的情况下
+    .size@{i}{
+        width: (100% / @n) * @i ;
+    }
+    .width(@n, @i+1)
+}
+.width(5);

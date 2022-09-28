@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-color: rgba(0,0,0,0.3);
+            top: 0;
+            left: 0;
+        }
+        section{
+            background-color: white;
+            width: 400px;
+            margin: 100px auto 0;
+        }
+        section div:first-child{
+            font-size: 25px;
+            font-weight: lighter;
+            padding:10px 20px;
+        }
+        section div:first-child span:last-child{
+            position: absolute;
+            right: 20px;
+        }
+        p{
+            padding-left: 20px;
+        }
+        .btns{
+            text-align: right;
+            padding-bottom: 20px;
+            padding-right: 20px;
+        }
+        .btns button{
+            border: none;
+            background: none;
+            border: 1px solid rgb(92, 157, 243);
+            border-radius: 5px;
+            width: 80px;
+            line-height: 30px;
+        }
+        .btns button:last-child{
+            background-color: rgb(92, 157, 243);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <section>
+            <div>
+                <span>提示</span>
+                <span>&times;</span>
+            </div>
+            <p>
+                这是一段信息
+            </p>
+            <div class="btns">
+                <button>取消</button>
+                <button>确定</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            /* body 默认会自带 8 个像素的外边距 */
+            margin: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+            
+            position: absolute;
+
+            /* 设置动画名称 */
+            /* 动画名称是可以随便起的，但是尽量要有含义 */
+            animation-name: move;
+            /* 设置动画执行一次所需要的时间 */
+            animation-duration: 1s;
+            /* 设置速率 linear：匀速 */
+            animation-timing-function: linear;
+
+            /* 设置动画执行的次数，infinite 无限次的意思 */
+            animation-iteration-count: infinite;
+
+        }
+        /* @keyframes 定义动画的关键字 */
+        /* move 动画的名称 */
+        @keyframes move {
+            /* 动画开始前的样式  from 可以用 0% 代替 */
+            0% {
+                left: 0;
+                top: 0;
+                background-color: red;
+            }
+            25% {
+                left: calc(100% - 200px);
+                top: 0;
+                background-color: blue;
+            }
+            50% {
+                left: calc(100% - 200px);
+                top: calc(100% - 200px);
+            }
+            75% {
+                left: 0;
+                top: calc(100% - 200px);
+            }
+            /* 动画结束后的样式 to 可以用 100% 代替 */
+            100% {
+                /* 
+                    设置定位的时候注意：
+                    如果该标签有设置了 left 就千万不要再设置 right 了
+                    如果该标签有设置了 top 就千万不要再设置 bottom 了
+                    因为会有你想不到的后果
+                 */
+                /* right: 0; */
+                /* 计算的时候，千万记住运算符号左右两边加空格 */
+                /* left: calc(100% - 200px); */
+
+
+                left: 0;
+                top: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+  <script src="./bootstrap-3.3.7-dist/js/jquery-3.1.1.js"></script>
+  <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+  <style>
+    div{
+      height: 80px;
+      color: white;
+      font-size: 50px;
+    }
+    div:first-child{
+      height: 300px;
+    }
+    div:nth-child(2){
+      height: 200px;
+    }
+    div:nth-child(3){
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 对页面的容器进行栅格的划分，默认将容器划分为"12格" -->
+  <!-- 针对不同屏幕的大小指定占用多少格数，进行响应式的布局 -->
+  <!-- col-xs-:  超小屏    范围： 小于768px -->
+  <!-- col-sm-:  小屏             768px ~ x ~ 992px -->
+  <!-- col-md-:  中屏             992px ~ x ~1200px -->
+  <!-- col-lg-:  大屏             大于1200px -->
+
+  <div style='background-color:red' class="col-lg-4 col-md-2">01</div>
+  <div style='background-color:orange' class="col-lg-4 col-md-2">02</div>
+  <div style='background-color:green' class="col-lg-4 col-md-6">03</div>
+  <!-- 列重置 -->
+  <section class='clearfix'></section>
+  <div style='background-color:yellow' class="col-lg-12 col-md-4">04</div>
+  <!-- 移动元素到最左边/最右边的方式 -->
+  <!-- <div style='background-color:blue' class="col-lg-2 col-md-4 pull-right">05</div> -->
+  <!-- <div style='background-color:pink' class="col-lg-2 col-md-4 pull-left">06</div> -->
+
+  <!-- 列偏移 -->
+  <div style='background-color:blue' class="col-lg-2 col-md-4 col-lg-offset-4">05</div>
+  
+</body>
+</html>

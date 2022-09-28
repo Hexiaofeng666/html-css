@@ -1,0 +1,239 @@
+html,
+body {
+    background-color: white;
+    /* padding: 10px; */
+    width: 100%;
+    /* height: 100%; */
+    padding: 0;
+    margin: 0;
+}
+/* 顶部 */
+.distoparea{
+    width: 100%;
+    height: 10.8vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    /* left: 0;
+    right: 0; */
+    z-index: 99;
+    /* overflow: hidden; */
+    background-color: white;
+}
+.distoparea>img{
+    height: 100%;
+}
+.distoparea>img:nth-of-type(1){
+    width: 7.2vw;
+    height: 7.2vw;
+    margin: 2vw;
+}
+.distoparea>div{
+    /* margin-top: 13px; */
+    font-size: 3.6vw;
+    text-align: center;
+    
+}
+.distoparea>div>ul *{
+    margin: 0 2vw;
+    line-height: 10.8vw;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    opacity: 0.4;
+    display: inline-block;
+}
+.myopacity > li.active > a,
+ .myopacity > li.active > a:hover,
+  .myopacity > li.active > a:focus {
+    opacity: 1;
+    }
+/* 内容 */
+.discontent{
+    /* position: re; */
+    
+    /* height: 200px; */
+    width: 100%;
+    margin: auto;
+    margin-top: 10.8vw;
+    margin-bottom: 10.4vw;
+    /* text-align: center; */
+}
+.discontent>div{
+    /* margin-top: 78px; */
+    width: 100%;
+    /* height: 200px; */
+    display: none;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+/* 关注 */
+.concern{
+    /* width: 100%;
+    text-align: center; */
+    /* display: none; */
+}
+.concern>img{
+    width: 40%;
+    margin-top: 27.8vw;
+}
+.concern>p{
+    font-size: 4vw;
+    margin-top: 5.6vw;
+    margin-bottom: 11.1vw;
+}
+/* 按钮 */
+.concern>span{
+    font-size: 4vw;
+    background-color: orangered;
+    padding: 2.8vw 7vw;
+    border-radius: 50px;
+    color: white;
+    /* top: 50px; */
+}
+/* 广场 */
+.square{
+    /* display: none; */
+    overflow: hidden;
+}
+/* 评论 */
+.discuss{
+    margin-top: 4vw;
+    text-align: left;
+}
+/* 评论顶部 */
+.discuss>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 30px; */
+}
+.discuss>div:nth-of-type(1)>span{
+    font-size: 3.3vw;
+}
+.discuss>div:nth-of-type(1)>span>img{
+    width: 7.2vw;
+    border-radius: 50%;
+    margin-right: 2vw;
+}
+.discuss>div:nth-of-type(1)>img{
+    width: 5.6vw;
+    height: 100%;
+}
+/* 评论标题及正文 */
+.discuss>h2{
+    font-size: 3.9vw;
+}
+.discuss>p{
+    font-size: 3.6vw;
+    line-height: 5vw;
+    opacity: 0.8;
+}
+.discuss>p>span{
+    color: orangered;
+}
+.discuss>img{
+    width: 50vw;
+}
+/* 商品水印小字 */
+.discuss>div:nth-of-type(2){
+    background-color: #eeeeee;
+    width: 38vw;
+    margin: 2vw 0;
+    border-radius: 7px;
+    padding: 1vw 0;
+}
+.discuss>div:nth-of-type(2)>span>img{
+    width: 3.3vw;
+    height: 100%;
+    margin-top: -1vw;
+    margin-right: 2vw;
+}
+.discuss>div:nth-of-type(2)>span{
+    font-size: 3.3vw;
+    opacity: 0.8;
+}
+/* 米圈官方 */
+.discuss>p:nth-of-type(2){
+    background-color: #eeeeee;
+    padding: 2.8vw 6.3vw;
+    border-radius: 20px;
+}
+.discuss>p:nth-of-type(2)>span{
+    color: black;
+    opacity: 0.6;
+}
+/* 一键三连 */
+.discuss>div:nth-of-type(3){
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 10vw;
+    padding-left: 13.9vw;
+}
+.discuss>div:nth-of-type(3) img{
+    width: 5.6vw;
+    height: 100%;
+    margin-top: -1.5vw;
+    opacity: 0.6;
+}
+.discuss>div:nth-of-type(3)>span{
+    font-size: 3.3vw;
+    opacity: 0.6;
+}
+/* 边框条 */
+.bottomborder{
+    height: 1.7vw;
+    background-color: #eeeeee;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部 */
+.bottom{
+    /* background-color: gray; */
+    width: 100%;
+    height: 10vw;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    /* margin: 0 calc(50% - 360px); */
+    z-index: 999;
+}
+.bottom>a{
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+}
+.bottom>a>div>img{
+    /* margin: auto; */
+    width: 6vw;
+    height: 6vw;
+    /* position: fixed; */
+    /* margin-top: -2vw; */
+}
+.bottom>a>div>p{
+    /* margin: auto; */
+    font-size: 2.5vw;
+    text-decoration: none;
+}

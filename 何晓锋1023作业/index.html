@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            line-height: 50px;
+            opacity: 0.8;
+            border-bottom: rgb(224, 220, 220) 1px solid;
+        }
+
+        p:nth-of-type(5) {
+            background-color: rgb(224, 220, 220);
+        }
+
+        p span {
+            margin: 0 20px;
+            cursor: pointer;
+        }
+
+        .clickhover {
+            color: #c4284d;
+        }
+
+        .clickchoice {
+            padding: 5px 10px;
+            border: 1px solid #c4284d;
+            border-radius: 5px;
+        }
+
+        .clickchoice>button {
+            background-color: #c4284d;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="pinpai">品牌: </p>
+    <p id="jiage">价格: </p>
+    <p id="chicun">尺寸: </p>
+    <p id="xianka">显卡: </p>
+    <p></p>
+
+    <script>
+        // 数据
+        var allp = document.querySelectorAll('p')
+        var data = {
+            pinpai: ['惠普', '联想', '戴尔', '三星', '宏基', '苹果', '神州', '华硕', '方正'],
+            jiage: ['3000-3999', '4000-4999', '5000-5999', '6000-6999', '7000-7999', '8000-8999', '9000-9999',
+                '10000以上'
+            ],
+            chicun: ['8.9英寸及以下', '11英寸', '12英寸', '13英寸', '14英寸', '15英寸', '16英寸'],
+            xianka: ['独立显卡', '集成显卡', '核芯显卡']
+        }
+        // 渲染数据
+        for (const key in data) {
+            var p = document.querySelector('#' + key)
+            for (let i = 0; i < data[key].length; i++) {
+                p.innerHTML += '<span onclick="myadd(\'' + key + '\',this)">' + data[key][i] + '</span>'
+            }
+        }
+        var span = document.querySelectorAll('span')
+        // 定义一个空对象用来存放底部(已选条件)需要呈现的数据
+        var show = {}
+        // 头部点击事件
+        function myadd(params, el) {
+            for (const key in data) {
+                var log = 0
+                if (params == key) {
+                    show[params] = el.innerHTML
+                }
+            }
+            load()
+        }
+        // 页面初始渲染
+        function load() {
+            var newspan = document.querySelectorAll('span')
+            allp[4].innerHTML = '<span>已选条件：</span>'
+            // 重置红色字体
+            for (let i = 0; i < newspan.length; i++) {
+                    newspan[i].classList.remove('clickhover')
+                }
+            for (const key in show) {
+                allp[4].innerHTML += '<span class="clickchoice">' + show[key] + '<button onclick="deleteel(\'' + key +
+                    '\',this)">X</button></span>'
+                console.log(show[key]);
+                // 判断加红色字体
+                for (let i = 0; i < newspan.length; i++) {
+                    if (newspan[i].innerHTML == show[key]) {
+                        newspan[i].classList.add('clickhover')
+                    }
+                }
+            }
+        }
+        // 点击X进行删除
+        function deleteel(name, el) {
+            // console.log(show[name]);
+            delete show[name]
+            load()
+        }
+        load()
+    </script>
+</body>
+
+</html>

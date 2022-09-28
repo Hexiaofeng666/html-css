@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        nav{
+            line-height: 40px;
+            background-color: green;
+            /* fixed固定定位 */
+            /* 1.定位设置后，会脱离文档流，造成分层 */
+            /* 2. 固定定位参照物：当前页面显示的窗口*/
+            /* 3.定位设置后，可以使用top、left、right、bottom来对
+            元素在参照物的范围进行移动 */
+            position: fixed;
+            height: 100%;
+            right: 0;
+            /* bottom: 0; */
+        }
+        main{
+            font-size: 40px;
+            background-color: orange;
+            color: white;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 定位：更加灵活方便的进行元素位置的移动 -->
+    <nav>
+        <span>
+            首页
+        </span>
+        <span>
+            购物
+        </span>
+        <main>
+            页面内容
+        </main>
+    </nav>
+</body>
+</html>

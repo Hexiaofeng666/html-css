@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+        }
+
+        .title {
+            width: 100%;
+        }
+
+        .title>div {
+            display: inline-block;
+            position: relative;
+            margin-left: 30px;
+            width: 190px;
+            height: 50px;
+        }
+
+        .title>div div {
+            text-align: center;
+            /* height: 100px; */
+        }
+        .two{
+            height: 100px;
+            background-color: gray;
+            position: absolute;
+            width: 100%;
+            display: none;
+        }
+
+        /* .title>div>div:nth-of-type(2){
+            background-color: gray;
+        } */
+        p {
+            display: inline-block;
+            /* display: none; */
+            /* position: absolute; */
+            /* margin: auto; */
+            writing-mode: vertical-lr;
+            /* writing-mode: horizontal-tb; */
+            top: 30px;
+            margin-left: 20px;
+            /* width: 10px; */
+            color: white;
+        }
+
+        p:nth-of-type(1) {
+            left: 0;
+        }
+
+        p:nth-of-type(2) {
+            right: 30%;
+        }
+
+        p:nth-of-type(3) {
+            right: 0;
+        }
+
+        .title>div:hover a {
+            background-color: red;
+        }
+
+        .title>div:hover .two {
+            display: inherit;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            writing-mode: vertical-lr;
+            /* margin: auto; */
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <img src="./logo116.png" alt="">
+
+        <div>
+            <div class="one">
+                <a href="#"> 精选</a>
+            </div>
+            <div class="two">
+                <p>内容</p>
+                <p>内容</p>
+                <p>内容</p>
+            </div>
+        </div>
+        <div>
+            <div class="one">
+                <a href="#"> 精选</a>
+            </div>
+            <div class="two">
+                <p>内容</p>
+                <p>内容</p>
+                <p>内容</p>
+            </div>
+        </div><div>
+            <div class="one">
+                <a href="#"> 精选</a>
+            </div>
+            <div class="two">
+                <p>内容</p>
+                <p>内容</p>
+                <p>内容</p>
+            </div>
+        </div><div>
+            <div class="one">
+                <a href="#"> 精选</a>
+            </div>
+            <div class="two">
+                <p>内容</p>
+                <p>内容</p>
+                <p>内容</p>
+            </div>
+        </div><div>
+            <div class="one">
+                <a href="#"> 精选</a>
+            </div>
+            <div class="two">
+                <p>内容</p>
+                <p>内容</p>
+                <p>内容</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

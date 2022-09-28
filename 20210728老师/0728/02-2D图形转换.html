@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+            2D平面可以有哪些操作：
+            1. 平移
+            2. 旋转
+            3. 缩放
+            4. 切变，倾斜
+        */
+        body > div {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            /* margin: auto; */
+            /* 开启弹性布局 */
+            display: flex;
+            /* 横向居中 */
+            justify-content: center;
+            /* 纵向居中 */
+            align-items: center;
+
+
+            /* 
+                translate ：设置平移
+                第一个参数：X方向的平移距离
+                第二个参数：Y方向的平移距离
+                图形转换的时候，会带着子元素一起转换
+            */
+            /* 也可以单独设置某一个反向去平移 */
+            /* transform: translateX(); */
+            /* transform: translate(10px,20px); */
+
+            /* 
+                rotate : 设置旋转
+                deg 是单位度的意思，旋转多少度，旋转是顺时针旋转的
+            */
+            /* transform: rotate(0deg); */
+            /* 
+                默认的旋转点是中心点
+                transform-origin 设置旋转点
+                第一个参数是 X 方向的旋转点
+                第二个参数是 Y 方向的旋转点
+            */
+            /* transform-origin: 100% 0%; */
+
+            /* 
+                scale : 缩放
+                第一个参数： X 轴缩放比例
+                第二个参数： Y 轴缩放比例
+            */
+            /* transform: scale(1.5,2); */
+
+            /* 
+                skew : 切变，倾斜
+                第一个参数： 左右拉伸，正数往左，负数往右
+                第二个参数： 上下拉伸，正数往上，负数往下
+            */
+            /* transform: skew(0deg,10deg); */
+
+
+            /* 
+                如果想即旋转又缩放这样写是不行的
+            */
+            /* transform: rotate(30deg);
+            transform: scale(1.5,2); */
+            /*  如果想即旋转又缩放 应该要将其写到一起去，两个值之间使用空格隔开 */
+            /* transform: rotate(30deg) scale(1.5,2); */
+
+
+            /* 
+                组合变换
+                第一个参数：    横向缩放
+                第二个参数：    上下拉伸
+                第三个参数：    左右拉伸
+                第四个参数：    上下缩放
+                第五个参数：    水平平移
+                第六个参数：    垂直平移
+            */
+            transform: matrix(1.2,0,0,1,0,100);
+
+        }
+        div > div {
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            河南加油！
+        </div>
+    </div>
+</body>
+</html>

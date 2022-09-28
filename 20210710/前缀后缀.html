@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 前后缀是给制定的标签添加内容/内容样式 */
+        /* 前缀 */
+        div::before{
+            /* 放置前缀内容,无论前后缀是否要添加内容，content样式一定不能省略 */
+            /* 一旦缺少，前后缀无法添加上去 */
+            content: '';
+            color: red;
+            /* width: 20px;
+            height: 20px;
+            background-color: green; */
+            display: inline-block;
+
+            /* 绘制一个三角形 */
+            border-bottom: 10px solid black;
+            /* transparent透明色(形同切割) */
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+        div::after{
+            /* 放置前缀内容,无论前后缀是否要添加内容，content样式一定不能省略 */
+            /* 一旦缺少，前后缀无法添加上去 */
+            content: '';
+            color: red;
+            /* width: 20px;
+            height: 20px;
+            background-color: green; */
+            display: inline-block;
+
+            /* 绘制一个三角形 */
+            border-top: 10px solid black;
+            /* transparent透明色(形同切割) */
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+        p::before{
+            /* 放置前缀内容,无论前后缀是否要添加内容，content样式一定不能省略 */
+            /* 一旦缺少，前后缀无法添加上去 */
+            content: '';
+            color: red;
+            /* width: 20px;
+            height: 20px;
+            background-color: green; */
+            display: inline-block;
+
+            /* 绘制一个三角形 */
+            border-left: 10px solid black;
+            /* transparent透明色(形同切割) */
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+        p::after{
+            /* 放置前缀内容,无论前后缀是否要添加内容，content样式一定不能省略 */
+            /* 一旦缺少，前后缀无法添加上去 */
+            content: '';
+            color: red;
+            /* width: 20px;
+            height: 20px;
+            background-color: green; */
+            display: inline-block;
+
+            /* 绘制一个三角形 */
+            border-right: 10px solid black;
+            /* transparent透明色(形同切割) */
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        这是div的内容
+        <p>这是一个p标签</p>
+    </div>
+</body>
+</html>

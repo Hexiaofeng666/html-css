@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* hover 鼠标悬停到标签上才做样式，任何标签都有悬停样式 */
+        a:hover{
+            text-decoration: none;
+            color: red;
+        }
+        /* active当前鼠标点击的时候进行样式设置，任何标签都有激活样式 */
+        a:active{
+            color: green;
+        }
+        /* 未激活状态，链接未被访问过，仅限于a标签 */
+        a:link{
+            color: pink;
+        }
+        /* 链接已经被激活过的a标签，仅限于a标签 */
+        a:visited{
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="http://www.dangdang.com">当当</a>
+    <a href="http://map.com">百度地图</a>
+    <a href="http://baidu.com">百度</a>
+    <a href="http://jd.com">京东</a>
+    
+</body>
+</html>

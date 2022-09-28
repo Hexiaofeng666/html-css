@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+
+  <script src="./bootstrap-3.3.7-dist/js/jquery-3.1.1.js"></script>
+  <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      消息 <span class="badge">50</span>
+    </div>
+
+    <div class="alert alert-danger alert-dismissable">
+      <button class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      错误！请进行一些更改。
+    </div>
+
+
+    <div class="progress">
+      <!-- 通过style进行进度条页面样式设置 -->
+      <div class="progress-bar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+    </div>
+
+
+    <!-- 媒体对象 -->
+    <div class="media">
+      <div class="media-right">
+        图片
+      </div>
+      <div class="media-body">
+        内容
+      </div>
+    </div>
+
+
+    <!-- 面板 -->
+    <div class='panel panel-primary'>
+      <div class="panel-heading">
+        标题
+      </div>
+      <div class="panel-body">
+        内容
+      </div>
+      <div class="panel-footer">
+        尾部
+      </div>
+    </div>
+    <br>
+
+    <!-- 表格 -->
+    <!--  table-striped -->
+    <table class="table text-center table-bordered table-hover">
+      <tr class="active">
+        <td>01</td>
+        <td>02</td>
+        <td>03</td>
+      </tr>
+      <tr>
+        <td>01</td>
+        <td class="danger">02</td>
+        <td>03</td>
+      </tr>
+      <tr class="warning">
+        <td>01</td>
+        <td>02</td>
+        <td>03</td>
+      </tr>
+    </table>
+
+
+    <!-- 表单 -->
+    <!-- form-inline 内联表单，会导致表单中的内容并排 -->
+    <form action="" class="form-horizontal">
+      <!-- class .form-group 的 <div> 中。这是获取最佳间距所必需的 -->
+      <div class="form-group ">
+        <!-- control-label 会让内容竖直居中，内容居右对齐 -->
+        <div class="col-sm-2 control-label">账号：</div>
+        <div class="col-sm-10">
+          <!-- form-control 调整input的样式，并且默认占满父类标签 -->
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group">密码：<input type="text" class="form-control"></div>
+    </form>
+  </div>
+</body>
+
+</html>

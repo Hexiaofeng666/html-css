@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 样式选择器：选择到需要的标签 */
+        /* 1. 标签选择器：范围是找到当前文档中所有的符合条件的标签 */
+
+        /* 2. class选择器，使用方式： '.'+class名 */
+        /* class名可以重复使用，多个标签共用一个class名的时候，样式共用 */
+        /* 一个标签可以有多个class名，class名之间使用空格隔开 */
+        /* .one{
+            color: red;
+        }
+        .font{
+            font-weight: bold;
+        }
+
+        /* 3. id选择器 使用方式：'#'+id */
+        /* id名不可重复使用，id名是唯一的，一个标签只能有一个id名 */
+        /* #two{
+            color: blue;
+        }   */
+
+        /* 4. 并集选择器,当多个不同标签需要共用一个样式的时候 */
+        /* selector1,selector2,selector3,......{} */
+        /* span ，p{
+            color: orange;
+        } */
+
+        /* 5. 后代选择器    父类+ ' ' + 子类   （找到所有父类中符合条件的子类）*/
+        /* p span{
+            color: orangered;
+        } */
+
+        /* 直接后代查询(只选择第一代) */
+        /* body>span{
+            color: blue;
+        } */
+
+        /* 6.伪类选择器 */
+        /* el:nth-child(n)   先看第n个标签，再看是否为el标签 */
+
+        /* span:nth-child(5){
+            color: red;
+        } */
+
+        /* el:nth-of-type(n)  先将el标签类型的进行筛选出来，再从找到第n个 */
+        /* span:nth-of-type(5){
+            color: royalblue;
+        } */
+
+        /* 找到第一个元素 */
+        /* span:first-of-type{
+            color: red;
+        }
+        span:last-of-type{
+            color: blue;
+        }  */
+
+        /* 按照规律查找 */
+        /* even ==2n */
+        /* span:nth-of-type(2n){
+            color: yellowgreen;
+        } */
+        /* odd == 2n+1 */
+        /* body>span:nth-of-type(2n+1){
+            color: violet;
+        } */
+
+
+        /* span:nth-of-type(n+L) 从第L个标签开始，往后匹配，直到最后一个标签*/
+        /* span:nth-of-type(n+4) {
+            color: pink;
+        } */
+
+        /* 注意：  nth-of-type()标签中选择标签的方式，nth-child一样也有，二者只有选择顺序的问题  */
+
+
+        /* 7. 选择空标签 :empty */
+        /* span:empty{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        } */
+
+        /* 8. :not()将符合条件的标签进行剔除 */
+
+        /* span:not(:empty){
+            display: inline-block;
+            color: green !important;
+        } */
+        /* span:not(:nth-child(7)){
+            color: purple;
+            font-size: 60px;
+        } */
+
+        /* 9. 兄弟选择器 */
+        /*      +    查找到下一个相邻的、符合条件的兄弟标签*/
+        /* .one + span{
+            color: orange;
+        } */
+
+
+        /*     ~   查找匹配元素下的所有符合条件的兄弟标签 */
+        /* .one~span{
+            color: orange;
+        } */
+
+        /* 10.* 找到页面中的所有标签，甚至包裹html范围最大，一般是放在样式的开始部分这个 */
+        *{
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 标签是可以被重复使用 -->
+    <span class="one">这是文本1</span>
+    <!-- <b>加粗</b> -->
+    <span>这是文本2</span>
+    <span>这是文本3</span>
+    <span>这是文本4</span>
+    <!-- <i>斜体标签</i> -->
+    <span></span>
+    <span>这是文本5</span>
+    <span>这是文本6</span>
+    <span>这是文本7</span>
+    <p>
+        <span class="one font">这是p内容</span>
+
+    </p>
+    <p id="two">这是第二段p内容</p>
+    <del>删除线标签</del>
+
+
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+html,
+body {
+    background-color: white;
+    /* padding: 10px; */
+    width: 100%;
+    /* height: 100%; */
+    padding: 0;
+    margin: 0;
+}
+/* 顶部 */
+.distoparea{
+    width: 100%;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    /* left: 0;
+    right: 0; */
+    z-index: 99;
+    /* overflow: hidden; */
+    background-color: white;
+}
+.distoparea>img{
+    height: 100%;
+}
+.distoparea>img:nth-of-type(1){
+    width: 52px;
+    height: 52px;
+    margin: 13px;
+}
+.distoparea>div{
+    /* margin-top: 13px; */
+    font-size: 26px;
+    text-align: center;
+    
+}
+.distoparea>div>ul *{
+    margin: 0 15px;
+    line-height: 78px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    opacity: 0.4;
+    display: inline-block;
+}
+.myopacity > li.active > a,
+ .myopacity > li.active > a:hover,
+  .myopacity > li.active > a:focus {
+    opacity: 1;
+    }
+/* 内容 */
+.discontent{
+    /* position: re; */
+    
+    /* height: 200px; */
+    width: 720px;
+    margin: auto;
+    margin-top: 78px;
+    margin-bottom: 75px;
+    /* text-align: center; */
+}
+.discontent>div{
+    /* margin-top: 78px; */
+    width: 100%;
+    /* height: 200px; */
+    display: none;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+/* 关注 */
+.concern{
+    /* width: 100%;
+    text-align: center; */
+    /* display: none; */
+}
+.concern>img{
+    width: 40%;
+    margin-top: 200px;
+}
+.concern>p{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+/* 按钮 */
+.concern>span{
+    font-size: 30px;
+    background-color: orangered;
+    padding: 20px 50px;
+    border-radius: 50px;
+    color: white;
+    /* top: 50px; */
+}
+/* 广场 */
+.square{
+    /* display: none; */
+    overflow: hidden;
+}
+/* 评论 */
+.discuss{
+    margin-top: 30px;
+    text-align: left;
+}
+/* 评论顶部 */
+.discuss>div:nth-of-type(1){
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 30px; */
+}
+.discuss>div:nth-of-type(1)>span{
+    font-size: 24px;
+}
+.discuss>div:nth-of-type(1)>span>img{
+    width: 52px;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+.discuss>div:nth-of-type(1)>img{
+    width: 40px;
+    height: 100%;
+}
+/* 评论标题及正文 */
+.discuss>h2{
+    font-size: 28px;
+}
+.discuss>p{
+    font-size: 26px;
+    line-height: 36px;
+    opacity: 0.8;
+}
+.discuss>p>span{
+    color: orangered;
+}
+.discuss>img{
+    width: 360px;
+}
+/* 商品水印小字 */
+.discuss>div:nth-of-type(2){
+    background-color: #eeeeee;
+    width: 273px;
+    margin: 14px 0;
+    border-radius: 7px;
+    padding: 7px 0;
+}
+.discuss>div:nth-of-type(2)>span>img{
+    width: 24px;
+    height: 100%;
+    margin-top: -7px;
+    margin-right: 14px;
+}
+.discuss>div:nth-of-type(2)>span{
+    font-size: 24px;
+    opacity: 0.8;
+}
+/* 米圈官方 */
+.discuss>p:nth-of-type(2){
+    background-color: #eeeeee;
+    padding: 20px 45px;
+    border-radius: 20px;
+}
+.discuss>p:nth-of-type(2)>span{
+    color: black;
+    opacity: 0.6;
+}
+/* 一键三连 */
+.discuss>div:nth-of-type(3){
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 15px 70px;
+    padding-left: 100px;
+}
+.discuss>div:nth-of-type(3) img{
+    width: 40px;
+    height: 100%;
+    margin-top: -10px;
+    opacity: 0.6;
+}
+.discuss>div:nth-of-type(3)>span{
+    font-size: 24px;
+    opacity: 0.6;
+}
+/* 边框条 */
+.bottomborder{
+    height: 12px;
+    background-color: #eeeeee;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 底部 */
+.bottom{
+    /* background-color: gray; */
+    width: 100%;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    /* margin: 0 calc(50% - 360px); */
+    z-index: 999;
+}
+.bottom>a{
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    color: gray;
+}
+.bottom>a>div>img{
+    /* margin: auto; */
+    width: 40px;
+    height: 40px;
+    /* position: fixed; */
+    margin-top: -15px;
+}
+.bottom>a>div>p{
+    /* margin: auto; */
+    font-size: 18px;
+    
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+		body{
+			position: relative;
+		}
+            #d{
+                width:200px;
+                height:2200px;
+                border:10px #ccc solid;
+                padding:10px;
+                background:red;
+            }
+			.aaa{
+				height: 800px;
+				width: 100px;
+				background-color: skyblue;
+			}
+			.hahaha{
+				width: 10px;
+				height: 10px;
+				background-color: black;
+				position: absolute;
+				top: 300px;
+				left: 300px;
+			}
+        </style>
+    </head>
+    <body>
+        <div style="height:200px;width:200px;background-color: rebeccapurple;">
+			<div style="height:50%;width:50%;background-color: red;">
+				<div style="height:50%;width:50%;background-color: saddlebrown;">
+					<div style="height:50%;width:50%;background-color: skyblue;">
+						<div id="div" class="my" style="height:50%;width:50%;border-style:solid;background-color: tomato;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var div = document.getElementById("div");
+			var hh = document.getElementsByClassName('my')
+			console.log(hh[0]);
+			// console.log(div);
+			var w = hh[0].offsetWidth;    // 返回元素的总宽度
+			var h = hh[0].offsetHeight;    // 返回元素的总高度
+			console.log(w);
+			console.log(h);
+			console.log('这是');
+			console.log(window.screen.width);
+			console.log(window.screen.height);
+			// alert("div.offsetWidth =" + w);
+			// alert("div.offsetHeight =" +w);
+		</script>
+    </body>
+    
+</html>

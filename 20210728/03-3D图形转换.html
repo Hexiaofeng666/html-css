@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div{
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: red;
+        }
+        body>div>div{
+            width: 250px;
+            height: 250px;
+            background-color: blue;
+
+           
+        }
+        body>div>div>div{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+
+
+            /* 
+                rotate3d :定义一个3D的旋转
+                第一个参数:X轴的开关
+                第二个参数:Y轴的开关
+                第三个参数:Z轴的开关
+                第四个参数:旋转的角度
+            */
+            transform: rotate3d(0,0.5,0,1deg);
+
+
+            /* 
+                translate3d :定义一个3D移动
+                第一个参数:X轴的移动距离
+                第二个参数:Y轴的移动距离
+                第三个参数:Z轴的移动距离
+            */
+            /* transform: translate3d(10px,10px,10px); */
+
+            
+            /* 
+                scale3d :定义一个3D缩放
+                第一个参数:X轴的缩放
+                第二个参数:Y轴的缩放
+                第三个参数:Z轴的缩放
+
+            */
+            /* transform: scale3d(1,1,1); */
+        }
+        div{
+            /* 开启 3D 功能 */
+            transform-style: preserve-3d;
+            /* 设置观察距离，视距离，镜头到元素的距离 */
+            perspective: 600px;
+            /* 设置观察点 */
+            perspective-origin: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

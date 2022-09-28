@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+    }
+    .banner{
+      width: 100%;
+    }
+    .nav{
+      width: 80%;
+      margin: auto;
+    }
+    .nav section,.nav img{
+      float: left;
+    }
+    .nav section{
+      margin-top: 80px;
+    }
+    .nav section span{
+      margin-right: 15px;
+      font-size: 14px;
+    }
+    .active{
+      background-color: orange;
+      color: white;
+      padding: 2px 7px;
+      border-radius: 5px;
+    }
+    .content{
+      text-align: center;
+    }
+    h4{
+      color: brown;
+      border-top:2px solid brown;
+      border-bottom:2px solid brown;
+      display: inline-block;
+      font-size: 19px;
+      padding: 4px 6px;
+      margin-bottom: 10px;
+    }
+    .content span{
+      display: block;
+      /* color: #ffDE7C; */
+      color: blue;
+      /* 调整字间距 */
+      letter-spacing: 8px;
+      margin-bottom: 8px;
+    }
+    .imgs{
+      overflow: hidden;
+      display: inline-block;
+    }
+    .imgs img{
+      display: block;
+      margin-bottom: 3px;
+    }
+    .imgs section{
+      float: left;
+      margin-left:3px;
+    }
+
+  </style>
+</head>
+<body>
+   <!-- 头部导航栏 -->
+   <div class="header">
+        <div class="nav">
+          <img src="./img/1.png" alt="">
+           <section>
+              <span class="active">首页</span>
+              <span>企业简介</span>
+              <span>产品展示</span>
+              <span>店铺效果</span>
+              <span>代理相关</span>
+              <span>联系我们</span>
+              <span>人才招聘</span>
+              <span>留言咨询</span>
+           </section>
+        </div>
+        <img src="./img/3.png" alt="" class="banner">
+   </div>
+
+   <div class="content">
+        <h4>推荐甜品</h4>
+        <span>热销推荐·较新推荐</span>
+        <div class="imgs">
+          <section>
+            <img src='./img/2.png'>
+            <img src='./img/4.png'>
+          </section>
+          <section>
+            <img src='./img/7.png'>
+            <img src='./img/5.png'>
+          </section>
+          <section>
+            <img src='./img/6.png'>
+            <img src='./img/8.png'>
+          </section>
+        </div>
+   </div>
+</body>
+</html>

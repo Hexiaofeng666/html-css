@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <h1>猜数字游戏</h1>
+    <input type="text" value=''>
+    <button>确认</button>
+    <p>请输入0 ~ 100之间的数字</p>
+    <img src="" alt="">
+    <script>
+      //  获取标签
+      var input = document.querySelector('input')
+      var p = document.querySelector('p')
+      var btn = document.querySelector('button')
+      var img = document.querySelector('img')
+
+      // 随机数字
+      var r = Math.round(Math.random()*100)
+      // 记录机会次数
+      var count=3;
+      var min=0,max=100
+      // 给按钮绑定点击事件
+      btn.onclick=function(){
+        // 获取input的内容
+         var val = input.value
+
+         if(val<=100&&val>0){
+          //  有效数字
+            count--
+           if (count > 0) {
+             //  有机会可以再次猜数字
+             if (r > val) {
+               min = val
+               p.innerText = '猜小了，输入' + min + '~' + max + '之间的数字，还有' + count + '次机会'
+               img.src='./sorry.gif'
+              //  延时器(延时多少时间之后执行)
+               setTimeout(function(){
+                 img.src=''
+               },2000);
+             } else if (r < val) {
+               max = val
+               p.innerText = '猜大了，输入' + min + '~' + max + '之间的数字，还有' + count + '次机会'
+                img.src = './sorry.gif'
+                  setTimeout(function () {
+                 img.src = ''
+               }, 2000);
+             } else {
+               p.innerText = '恭喜你，猜对了~~~~'
+               count = -1
+                img.src = './good.gif'
+             }
+           } else if (count == 0) {
+             //  机会已经用完，游戏结束
+             if (r > val) {
+               min = val
+               p.innerText = '猜小了,游戏结束'
+             } else if (r < val) {
+               max = val
+               p.innerText = '猜大了，游戏结束'
+             } else {
+               p.innerText = '恭喜你，猜对了~~~~'
+             }
+           }
+         }else{
+           alert('请输入一个有效数字')
+         }
+   
+
+      }
+
+    </script>
+</body>
+</html>

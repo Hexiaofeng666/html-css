@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: 50px auto;
+            /* 设置相邻单元格的边框距离为0 */
+            border-spacing: 0;
+            /* 设置表格边框合并为单一的边框，去掉重复的边框 */
+            border-collapse: collapse;
+        }
+        td,th,table{
+            border: 1px solid red;
+            text-align: center;
+        }
+        td{
+            height: 30px;
+        }
+        th{
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- table定义的是表格 -->
+    <table>
+        <!-- caption 定义的是表格中的标题 -->
+        <caption>课程表</caption>
+        <!-- thead定义的是表格的头部 -->
+        <thead>
+            <!-- tr定义的是表格 -->
+            <tr>
+                <!-- th定义我们表格中的表头单元格用的 -->
+                <th>\</th>
+                <th>周一</th>
+                <th>周二</th>
+                <th>周三</th>
+                <th>周四</th>
+                <th>周五</th>
+                <th>周六</th>
+                <th>周日</th>
+            </tr>
+        </thead>
+        <!-- tbody定义的是表格中的主体内容 -->
+        <tbody>
+            <tr>
+                <tr>
+                    <td>上午</td>
+                    <td colspan="2" rowspan="2">自习</td>
+                    <td>自习</td>
+                    <td>体育</td>
+                    <td>上午</td>
+                    <td>自习</td>
+                    <td>自习</td>
+                    <!-- <td>体育</td> -->
+                </tr>
+                <tr>
+                    <td>下午</td>
+                    <!-- rowspan合并行 -->
+                    <td>上午</td>
+                    <td>自习</td>
+                    <td>自习</td>
+                    <!-- colspan合并列 -->
+                    <td colspan="2" rowspan="2">体育</td>
+                    <!-- <td>自习</td> -->
+                    <!-- <td>自习</td> -->
+                    <!-- <td>体育</td> -->
+                </tr>
+                <tr>
+                    <td>晚上</td>
+                    <td colspan="3">HTML</td>
+                    <td>HTML</td>
+                    <td>自习</td>
+                    <!-- <td>自习</td> -->
+                    <!-- <td>体育</td> -->
+                    <!-- <td>自习</td> -->
+                    <!-- <td>自习</td> -->
+                </tr>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

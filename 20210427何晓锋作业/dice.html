@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dice{
+            width: 300px;
+            height: 300px;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            /* 阴影：  x轴的偏移量   y轴的偏移量   模糊程度    颜色  方向 */
+            box-shadow: 2px 2px 50px gray inset;
+            margin-left: 250px;
+            /* 绝对定位 */
+            position: absolute;
+            display: inline-block;
+        }
+        .rightbox{
+            margin-left: 1000px;
+        }
+        .circle{
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            background-color: rgb(115, 115, 115);
+            /* border: 2px solid black; */
+            box-shadow: 0px 10px 20px rgb(233, 237, 237) inset;
+            /* display: inline-block; */
+            /* margin: 18px; */
+            position: absolute;
+        }
+        .lefttop{
+            left: 40px;
+            top: 40px;
+            /* background-color: blanchedalmond; */
+        }
+        .righttop{
+            right: 40px;
+            top: 40px;
+        }
+        .leftbottom{
+            left: 40px;
+            bottom: 40px;
+        }
+        .rightbottom{
+            right: 40px;
+            bottom: 40px;
+        }
+        .center{
+            left: 120px;
+            top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dice leftbox">
+        <div class="circle lefttop"></div>
+        <div class="circle righttop"></div>
+        <div class="circle leftbottom"></div>
+        <div class="circle rightbottom"></div>
+    </div>
+    <div class="dice rightbox">
+        <div class="circle lefttop"></div>
+        <div class="circle righttop"></div>
+        <div class="circle center"></div>
+        <div class="circle leftbottom"></div>
+        <div class="circle rightbottom"></div>
+    </div>
+</body>
+</html>

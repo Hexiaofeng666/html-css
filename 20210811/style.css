@@ -1,0 +1,45 @@
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #eeee66;
+}
+p {
+  color: #eeee66;
+  border: 1px solid #eeee66;
+  padding: 20px;
+  margin: 20px;
+}
+div {
+  background-color: #f8f8c2;
+}
+b {
+  color: red;
+  border: 1px solid orange;
+  padding: 20px;
+  border-radius: 10px;
+}
+span {
+  color: blue;
+  border: 1px solid orange;
+  padding: 20px;
+  border-radius: 10px;
+}
+section {
+  color: yellow;
+  border: 1px solid orange;
+  padding: 30px;
+  border-radius: 10px;
+}
+section u {
+  color: black;
+}
+section:hover {
+  background-color: green;
+}
+.font,
+u {
+  font-weight: bold;
+}
+u {
+  font-style: italic;
+}

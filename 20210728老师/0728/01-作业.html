@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            width: 300px;
+            height: 400px;
+            border: 1px solid red;
+            margin: 50px auto;
+            /* 设置相对定位，目的是让 p 标签相对 main 进行脱离文档流 */
+            position: relative;
+        }
+        h5 {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            background-color: gainsboro;
+            margin: 0;
+            padding: 0;
+
+            position: absolute;
+            z-index: 1;
+        }
+        h5 > span {
+            color: white;
+            background-color: gray;
+            /* 默认系统的字体大小是 16px */
+            font-size: 12px;
+            /* 将元素转换成块级元素 */
+            display: block;
+            height: 30px;
+            width: 60px;
+            /* 设置文本内容居中 */
+            text-align: center;
+        }
+        p {
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            padding: 0;
+            margin: 0;
+            /* 绝对定位 */
+            position: absolute;
+            top: 0;
+            /* 设置 Y 轴超出的部分可以通过滚动的形式展示出来 */
+            overflow-y: auto;
+
+            padding-top: 30px;
+
+            box-sizing: border-box;
+        }
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: green;
+            padding: 50px;
+            margin: 50px;
+            border: 50px solid red;
+            /* 
+                宽度： 500px = 内容 300 + 内边距 100 + 边框 100
+            */
+            /* 将内边距和边框的大小计算到内容中去 */
+            /* 该方法在开发中非常，常用 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        一辈子在钱眼里挣扎，你却对人说，你是在挣钱。
+    </div>
+
+
+
+    <main>
+        <h5>
+            <span>新闻</span>
+        </h5>
+
+        <p>
+            刘诗雯在赛后采访中落泪 视频截图
+            但与此类严苛调子相反，我浏览中国社交网络比如微博和微信的时候，却发现（大量）不同内容。7月26日晚，当乒乓球混双决赛结束后，在中国微博的热搜榜里有很多与乒乓球相关的热词。当我点开之后，看到了非常多的暖心内容，比如“你们真的非常棒。银牌也是英雄！”“你们是中国人的骄傲。结果不重要，刘诗雯不要哭泣。”“在14亿中国人里，你们永远是最棒的！”我几乎没有找到苛责中国选手输掉比赛的内容，反而更多是称赞他们的努力。我还注意到，有不少中国网友坦率地说日本选手打得很不错，并为能欣赏到这样一场激烈比赛感到高兴。
+            放在从前的中国，像这样称赞输球的运动员是不太多见的。但现在，即使在匿名的中国社交网站上，也很少看到那种往伤口上撒盐的严厉批评。从表面上看，一些媒体报道的用词或许有些严苛，但从中国网友对那些虽然失败却竭尽全力的运动员所说出的暖心话语中，不难发现中国民众对待（体育比赛）胜负的态度正在发生改变。（作者中岛惠，李杨译）
+        </p>
+    </main>
+</body>
+</html>

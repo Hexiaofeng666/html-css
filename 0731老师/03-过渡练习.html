@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li {
+            height: 40px;
+            width: 100px;
+            background-color: red;
+            margin-top: 10px;
+            color: white;
+            text-align: right;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            line-height: 40px;
+
+            
+            position: relative;
+            left: -50px;
+
+            padding: 0 10px;
+            /* 这句代码不用记，他是设置内边距和边框大小计算到内容中的 */
+            box-sizing: border-box;
+
+            cursor:pointer;
+            transition: 1s all;
+
+            /* 禁止用户选中内容 */
+            user-select: none;
+            
+        }
+        li:hover {
+            left: 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>手机</li>
+        <li>电脑</li>
+        <li>平板</li>
+        <li>电视</li>
+        <li>冰箱</li>
+        <li>空调</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style lang="">
+    img{
+      width: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      /* 使用动画 */
+      animation: move 2s linear;
+    }
+    /* 定义一个动画 */
+    /* 前后的动画效果属性要保持一致 */
+    @keyframes move{
+      /* 以0%~100% 来进行替换from(0%) ~ to(100%) */
+      from{
+        top: 0;
+        left: 0;
+      }
+      25%{
+        /* 右上角 */
+        top: 0;
+        /* calc(计算的表单式) 计算属性 */
+        left:calc(100% - 100px);
+      }
+      50%{
+        /* 右下角 */
+        top: calc(100% - 166.667px);
+        left:calc(100% - 100px);
+      }
+      75%{
+        /* 左下角 */
+        left: 0;
+        top: calc(100% - 166.667px);
+      }
+      to{
+        /* 左上角 */
+        left: 0;
+        top: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+   <img src='./marry.png'>
+</body>
+</html>
